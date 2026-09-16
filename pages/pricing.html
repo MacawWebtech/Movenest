@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Calculator | MoveNest</title>
+  <meta name="description" content="Get an indicative moving cost in seconds. Enter your pickup and delivery details, home size, and services needed for a transparent breakdown.">
+  <link rel="canonical" href="https://www.movenest.example/pages/pricing.html">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Pricing Calculator | MoveNest">
+  <meta property="og:description" content="Get an indicative moving cost in seconds. Enter your pickup and delivery details, home size, and services needed for a transparent breakdown.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.movenest.example/pages/pricing.html">
+  <meta name="theme-color" content="#142238">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('movenest-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <div class="preloader-route"><span class="preloader-pin"></span></div>
+      <span class="preloader-word">MoveNest</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container-wide d-flex align-items-center justify-content-between header-row">
+      <a href="index.html" class="brand-mark"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+
+      <nav class="main-nav d-none d-lg-flex" aria-label="Primary">
+        <div class="dropdown">
+          <a href="index.html" class="dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false" role="button">Home</a>
+          <ul class="dropdown-menu border-0 shadow-card rounded-md p-2 dropdown-surface">
+            <li><a class="dropdown-item rounded-sm py-2" href="index.html">Home — Split Hero</a></li>
+            <li><a class="dropdown-item rounded-sm py-2" href="home-2.html">Home — The Smart Way</a></li>
+          </ul>
+        </div>
+        <a href="about.html" class="">About</a>
+        <a href="services.html" class="">Services</a>
+        <a href="how-it-works.html" class="">How It Works</a>
+        <a href="pricing.html" class="active">Pricing</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-rtl-toggle aria-pressed="false" aria-label="Toggle right-to-left layout">
+          <i class="bi bi-text-right"></i>
+        </button>
+        <a href="login.html" class="btn btn-outline btn-sm d-none d-md-inline-flex">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-sm">Get a Quote</a>
+        <button type="button" class="icon-btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu">
+          <i class="bi bi-list icon-btn-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <span class="brand-mark" id="mobileNavLabel"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <a href="index.html" class="nav-link-lg">Home — Split Hero</a>
+      <a href="home-2.html" class="nav-link-lg">Home — The Smart Way</a>
+      <a href="about.html" class="nav-link-lg">About</a>
+      <a href="services.html" class="nav-link-lg">Services</a>
+      <a href="how-it-works.html" class="nav-link-lg">How It Works</a>
+      <a href="pricing.html" class="nav-link-lg">Pricing</a>
+      <a href="blog.html" class="nav-link-lg">Blog</a>
+      <a href="contact.html" class="nav-link-lg">Contact</a>
+      <div class="d-flex gap-2 mt-4">
+        <a href="login.html" class="btn btn-outline btn-block flex-fill">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-block flex-fill">Get a Quote</a>
+      </div>
+      <button type="button" class="btn btn-outline btn-sm mt-3" data-theme-toggle aria-pressed="false">
+        <i class="bi bi-moon-stars"></i> Toggle dark mode
+      </button>
+      <button type="button" class="btn btn-outline btn-sm mt-2" data-rtl-toggle aria-pressed="false">
+        <i class="bi bi-text-right"></i> Toggle RTL layout
+      </button>
+    </div>
+  </div>
+
+  <section class="page-banner">
+    <div class="page-banner-media"><img src="../assets/images/banner1.jpg" alt="Boxes ready for a household move"></div>
+    <span class="page-banner-scrim" aria-hidden="true"></span>
+    <div class="container-wide page-banner-inner">
+      <nav class="page-banner-crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span class="current">Pricing</span>
+      </nav>
+      <h1>Pricing</h1>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container-wide">
+      <span class="h-eyebrow">PRICING CALCULATOR</span>
+      <h2 class="mt-3 mb-3">Know your moving cost before moving day</h2>
+      <p class="measure fs-5">This gives an indicative range. Your move coordinator confirms the final quote after a short call or a quick home visit for large moves.</p>
+    </div>
+  </section>
+
+  <section class="section pt-0">
+    <div class="container-wide">
+      <div class="row g-4">
+        <div class="col-lg-7">
+          <form id="fullCalcForm" data-validate class="bg-surface rounded-lg shadow-card p-4 p-lg-5">
+            <h5 class="mb-3">Pickup</h5>
+            <div class="row g-3 mb-4">
+              <div class="col-md-6"><label class="form-label" for="pCity">City</label><input class="form-control" id="pCity" name="pickupCity" required data-label="pickup city" value="Chennai"></div>
+              <div class="col-md-6"><label class="form-label" for="pAddr">Address</label><input class="form-control" id="pAddr" name="pickupAddress" placeholder="House / street / area"></div>
+            </div>
+
+            <h5 class="mb-3">Delivery</h5>
+            <div class="row g-3 mb-4">
+              <div class="col-md-6"><label class="form-label" for="dCity">City</label><input class="form-control" id="dCity" name="deliveryCity" required data-label="delivery city" value="Bengaluru"></div>
+              <div class="col-md-6"><label class="form-label" for="dAddr">Address</label><input class="form-control" id="dAddr" name="deliveryAddress" placeholder="House / street / area"></div>
+            </div>
+
+            <h5 class="mb-3">Home details</h5>
+            <div class="row g-3 mb-4">
+              <div class="col-md-3">
+                <label class="form-label" for="homeSize">Home size</label>
+                <select class="form-select" id="homeSize" name="homeSize">
+                  <option value="studio">Studio</option>
+                  <option value="1bhk">1 BHK</option>
+                  <option value="2bhk" selected>2 BHK</option>
+                  <option value="3bhk">3 BHK</option>
+                  <option value="4bhk">4+ BHK</option>
+                </select>
+              </div>
+              <div class="col-md-3">
+                <label class="form-label" for="rooms">Rooms</label>
+                <input type="number" min="1" max="10" class="form-control" id="rooms" value="3">
+              </div>
+              <div class="col-md-3">
+                <label class="form-label" for="floor">Floor</label>
+                <input type="number" min="0" max="40" class="form-control" id="floor" value="2">
+              </div>
+              <div class="col-md-3">
+                <label class="form-label" for="lift">Lift available</label>
+                <select class="form-select" id="lift">
+                  <option value="1" selected>Yes</option>
+                  <option value="0">No</option>
+                </select>
+              </div>
+            </div>
+
+            <h5 class="mb-3">Services</h5>
+            <div class="row g-2 mb-4">
+              <div class="col-6 col-md-4"><div class="form-check"><input class="form-check-input" type="checkbox" id="svcPacking" checked><label class="form-check-label" for="svcPacking">Packing</label></div></div>
+              <div class="col-6 col-md-4"><div class="form-check"><input class="form-check-input" type="checkbox" id="svcUnpacking"><label class="form-check-label" for="svcUnpacking">Unpacking</label></div></div>
+              <div class="col-6 col-md-4"><div class="form-check"><input class="form-check-input" type="checkbox" id="svcDismantle"><label class="form-check-label" for="svcDismantle">Furniture dismantling</label></div></div>
+              <div class="col-6 col-md-4"><div class="form-check"><input class="form-check-input" type="checkbox" id="svcFragile" checked><label class="form-check-label" for="svcFragile">Fragile-item handling</label></div></div>
+              <div class="col-6 col-md-4"><div class="form-check"><input class="form-check-input" type="checkbox" id="svcStorage"><label class="form-check-label" for="svcStorage">Storage</label></div></div>
+            </div>
+
+            <h5 class="mb-3">Date</h5>
+            <div class="row g-3 mb-4">
+              <div class="col-md-6"><label class="form-label" for="moveDate">Moving date</label><input type="date" class="form-control" id="moveDate" name="moveDate" data-future-only="1"></div>
+            </div>
+
+            <button type="button" class="btn btn-primary btn-lg" onclick="runFullCalc()">Calculate estimate</button>
+          </form>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="ticket p-4 p-lg-5 h-100 d-flex flex-column position-sticky sticky-top-100">
+            <div class="d-flex justify-content-between align-items-center mb-3">
+              <h5 class="mb-0">Estimated breakdown</h5>
+              <span class="demo-tag">Demo estimate</span>
+            </div>
+            <ul class="price-breakdown" id="breakdownList"></ul>
+            <ul class="list-unstyled mt-4 mb-0">
+              <li class="d-flex gap-3 py-2 border-bottom border-soft"><i class="bi bi-check-circle-fill check-icon"></i> Fully insured move, no hidden charges</li>
+              <li class="d-flex gap-3 py-2 border-bottom border-soft"><i class="bi bi-check-circle-fill check-icon"></i> GST already included in this estimate</li>
+              <li class="d-flex gap-3 py-2"><i class="bi bi-check-circle-fill check-icon"></i> Dedicated move coordinator on call</li>
+            </ul>
+            <div class="mt-auto">
+              <p class="small text-muted-2 mt-3 mb-4">Indicative estimate — final quote may vary after inspection.</p>
+              <a href="contact.html" class="btn btn-coral btn-block">Request Final Quote</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <footer class="site-footer">
+    <div class="container-wide section-tight">
+      <div class="row g-4 mb-5">
+        <div class="col-6 col-lg-3 footer-col">
+          <a href="index.html" class="brand-mark mb-3 d-inline-flex"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+          <p class="small mt-2">Household relocation, packed and delivered with care — across the street or across the country.</p>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Company</h6>
+          <a href="about.html">About us</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing calculator</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Services</h6>
+          <a href="services.html">Local shifting</a>
+          <a href="services.html">Intercity relocation</a>
+          <a href="services.html">Packing &amp; unpacking</a>
+          <a href="services.html">Office relocation</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Support</h6>
+          <a href="login.html">Login</a>
+          <a href="register.html">Create account</a>
+          <a href="track-move.html">Track a move</a>
+          <a href="coming-soon.html">Coming soon</a>
+          <a href="404.html">Help centre</a>
+        </div>
+      </div>
+      <div class="row g-4 align-items-center pt-4 border-top border-soft">
+        <div class="col-lg-6">
+          <form class="d-flex footer-newsletter" data-validate onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').innerHTML='Subscribed';">
+            <label for="footerEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="footerEmail" name="email" class="form-control" placeholder="Get moving tips by email" required data-validate="email" data-label="email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-lg-end gap-2 mt-3 mt-lg-0">
+          <a href="#" class="icon-btn" aria-label="MoveNest on Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 pt-4 mt-4 border-top border-soft small text-muted-2">
+        <span>&copy; 2026 MoveNest Relocation Pvt. Ltd. All rights reserved.</span>
+        <div class="d-flex gap-3">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script src="../assets/js/calculator.js"></script>
+  <script>
+    function runFullCalc() {
+      var est = MoveNestCalculator.computeEstimate({
+        from: document.getElementById('pCity').value,
+        to: document.getElementById('dCity').value,
+        homeSize: document.getElementById('homeSize').value,
+        liftAvailable: document.getElementById('lift').value === '1',
+        services: {
+          packing: document.getElementById('svcPacking').checked,
+          unpacking: document.getElementById('svcUnpacking').checked,
+          dismantling: document.getElementById('svcDismantle').checked,
+          fragile: document.getElementById('svcFragile').checked,
+          storage: document.getElementById('svcStorage').checked
+        }
+      });
+      var fmt = MoveNestCalculator.formatINR;
+      document.getElementById('breakdownList').innerHTML =
+        '<li><span>Base moving cost</span><span>' + fmt(est.base) + '</span></li>' +
+        '<li><span>Distance charge</span><span>' + fmt(est.distanceCharge) + '</span></li>' +
+        '<li><span>Home size charge</span><span>' + fmt(est.homeSizeCharge) + '</span></li>' +
+        '<li><span>Packing charge</span><span>' + fmt(est.packingCharge) + '</span></li>' +
+        '<li><span>Handling charge</span><span>' + fmt(est.handlingCharge) + '</span></li>' +
+        '<li><span>Additional services</span><span>' + fmt(est.additionalServices) + '</span></li>' +
+        '<li><span>Tax</span><span>' + fmt(est.tax) + '</span></li>' +
+        '<li class="total"><span>Estimated total</span><span>' + fmt(est.total) + '</span></li>';
+    }
+    document.addEventListener('DOMContentLoaded', runFullCalc);
+  </script>
+</body>
+</html>

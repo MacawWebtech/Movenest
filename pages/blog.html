@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog | MoveNest</title>
+  <meta name="description" content="Moving tips, packing guides, and company news from the MoveNest team — practical advice for a smoother relocation.">
+  <link rel="canonical" href="https://www.movenest.example/pages/blog.html">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Blog | MoveNest">
+  <meta property="og:description" content="Moving tips, packing guides, and company news from the MoveNest team — practical advice for a smoother relocation.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.movenest.example/pages/blog.html">
+  <meta name="theme-color" content="#142238">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('movenest-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <div class="preloader-route"><span class="preloader-pin"></span></div>
+      <span class="preloader-word">MoveNest</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container-wide d-flex align-items-center justify-content-between header-row">
+      <a href="index.html" class="brand-mark"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+
+      <nav class="main-nav d-none d-lg-flex" aria-label="Primary">
+        <div class="dropdown">
+          <a href="index.html" class="dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false" role="button">Home</a>
+          <ul class="dropdown-menu border-0 shadow-card rounded-md p-2 dropdown-surface">
+            <li><a class="dropdown-item rounded-sm py-2" href="index.html">Home — Split Hero</a></li>
+            <li><a class="dropdown-item rounded-sm py-2" href="home-2.html">Home — The Smart Way</a></li>
+          </ul>
+        </div>
+        <a href="about.html" class="">About</a>
+        <a href="services.html" class="">Services</a>
+        <a href="how-it-works.html" class="">How It Works</a>
+        <a href="pricing.html" class="">Pricing</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-rtl-toggle aria-pressed="false" aria-label="Toggle right-to-left layout">
+          <i class="bi bi-text-right"></i>
+        </button>
+        <a href="login.html" class="btn btn-outline btn-sm d-none d-md-inline-flex">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-sm">Get a Quote</a>
+        <button type="button" class="icon-btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu">
+          <i class="bi bi-list icon-btn-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <span class="brand-mark" id="mobileNavLabel"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <a href="index.html" class="nav-link-lg">Home — Split Hero</a>
+      <a href="home-2.html" class="nav-link-lg">Home — The Smart Way</a>
+      <a href="about.html" class="nav-link-lg">About</a>
+      <a href="services.html" class="nav-link-lg">Services</a>
+      <a href="how-it-works.html" class="nav-link-lg">How It Works</a>
+      <a href="pricing.html" class="nav-link-lg">Pricing</a>
+      <a href="blog.html" class="nav-link-lg">Blog</a>
+      <a href="contact.html" class="nav-link-lg">Contact</a>
+      <div class="d-flex gap-2 mt-4">
+        <a href="login.html" class="btn btn-outline btn-block flex-fill">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-block flex-fill">Get a Quote</a>
+      </div>
+      <button type="button" class="btn btn-outline btn-sm mt-3" data-theme-toggle aria-pressed="false">
+        <i class="bi bi-moon-stars"></i> Toggle dark mode
+      </button>
+      <button type="button" class="btn btn-outline btn-sm mt-2" data-rtl-toggle aria-pressed="false">
+        <i class="bi bi-text-right"></i> Toggle RTL layout
+      </button>
+    </div>
+  </div>
+
+  <section class="page-banner">
+    <div class="page-banner-media"><img src="../assets/images/story4.jpg" alt="MoveNest team writing up moving guides"></div>
+    <span class="page-banner-scrim" aria-hidden="true"></span>
+    <div class="container-wide page-banner-inner">
+      <nav class="page-banner-crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span class="current">Blog</span>
+      </nav>
+      <h1>Blog</h1>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container-wide">
+      <span class="h-eyebrow">BLOG</span>
+      <h2 class="mt-3 mb-3">Moving tips, guides &amp; company news</h2>
+      <p class="measure fs-5">Practical advice from people who pack and move households every day — plus the occasional update from inside MoveNest.</p>
+    </div>
+  </section>
+
+  <section class="section pt-0">
+    <div class="container-wide">
+      <div class="row g-3 align-items-center mb-4">
+        <div class="col-lg-5">
+          <div class="search-box">
+            <i class="bi bi-search"></i>
+            <input type="search" id="blogSearch" class="form-control" placeholder="Search articles...">
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="category-filter d-flex flex-wrap gap-2 justify-content-lg-end">
+            <button type="button" class="btn btn-outline btn-sm is-active" data-category="all">All</button>
+            <button type="button" class="btn btn-outline btn-sm" data-category="tips">Moving Tips</button>
+            <button type="button" class="btn btn-outline btn-sm" data-category="packing">Packing</button>
+            <button type="button" class="btn btn-outline btn-sm" data-category="guides">Guides</button>
+            <button type="button" class="btn btn-outline btn-sm" data-category="news">Company News</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-4" id="blogGrid">
+        <div class="col-md-6 col-lg-4 reveal blog-item" data-category="packing" data-title="packing 101 how to pack fragile items like a pro">
+          <div class="service-card">
+            <div class="service-img"><img src="../assets/images/packaging.jpg" alt="Packing fragile items"></div>
+            <div class="service-body">
+              <span class="blog-tag">Packing</span>
+              <h4><a class="link-plain" href="blog.html">Packing 101: How to Pack Fragile Items Like a Pro</a></h4>
+              <p>A room-by-room method for wrapping glassware, electronics, and awkward-shaped items so nothing shifts.</p>
+              <div class="blog-meta mb-3">
+                <span>Ananya Rao</span><span class="dot"></span><span>Mar 12, 2026</span><span class="dot"></span><span>6 min read</span>
+              </div>
+              <a href="blog.html" class="link-arrow small">Read article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal blog-item" data-category="guides" data-title="local vs intercity moving whats the real difference">
+          <div class="service-card">
+            <div class="service-img"><img src="../assets/images/Intercity relocation.jpg" alt="Intercity moving truck"></div>
+            <div class="service-body">
+              <span class="blog-tag">Guides</span>
+              <h4><a class="link-plain" href="blog.html">Local vs. Intercity Moving: What's the Real Difference?</a></h4>
+              <p>Timelines, pricing, and paperwork both look different once your move crosses a city line. Here's how to plan for each.</p>
+              <div class="blog-meta mb-3">
+                <span>Karthik Iyer</span><span class="dot"></span><span>Feb 26, 2026</span><span class="dot"></span><span>5 min read</span>
+              </div>
+              <a href="blog.html" class="link-arrow small">Read article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal blog-item" data-category="tips" data-title="5 signs its time to hire professional movers">
+          <div class="service-card">
+            <div class="service-img"><img src="../assets/images/work3.jpg" alt="Movers carrying boxes"></div>
+            <div class="service-body">
+              <span class="blog-tag">Moving Tips</span>
+              <h4><a class="link-plain" href="blog.html">5 Signs It's Time to Hire Professional Movers</a></h4>
+              <p>DIY moving can work for a studio apartment — here's when it stops being the cheaper option.</p>
+              <div class="blog-meta mb-3">
+                <span>Priya Menon</span><span class="dot"></span><span>Feb 14, 2026</span><span class="dot"></span><span>4 min read</span>
+              </div>
+              <a href="blog.html" class="link-arrow small">Read article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal blog-item" data-category="news" data-title="how movenest cut average delivery times by 30 percent">
+          <div class="service-card">
+            <div class="service-img"><img src="../assets/images/Tanspotation.jpg" alt="MoveNest transport fleet"></div>
+            <div class="service-body">
+              <span class="blog-tag">Company News</span>
+              <h4><a class="link-plain" href="blog.html">How MoveNest Cut Average Delivery by 30%</a></h4>
+              <p>A look inside the route-planning changes and fleet upgrades behind this year's biggest reliability improvement.</p>
+              <div class="blog-meta mb-3">
+                <span>MoveNest Team</span><span class="dot"></span><span>Jan 30, 2026</span><span class="dot"></span><span>3 min read</span>
+              </div>
+              <a href="blog.html" class="link-arrow small">Read article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal blog-item" data-category="guides" data-title="the ultimate moving day checklist">
+          <div class="service-card">
+            <div class="service-img"><img src="../assets/images/story2.jpg" alt="Family unpacking on moving day"></div>
+            <div class="service-body">
+              <span class="blog-tag">Guides</span>
+              <h4><a class="link-plain" href="blog.html">The Ultimate Moving Day Checklist</a></h4>
+              <p>Everything to confirm the week before, the night before, and the morning of — so nothing gets left behind.</p>
+              <div class="blog-meta mb-3">
+                <span>Ananya Rao</span><span class="dot"></span><span>Jan 18, 2026</span><span class="dot"></span><span>7 min read</span>
+              </div>
+              <a href="blog.html" class="link-arrow small">Read article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 reveal blog-item" data-category="tips" data-title="office relocation without the downtime">
+          <div class="service-card">
+            <div class="service-img"><img src="../assets/images/Office shifting.jpg" alt="Office relocation over a weekend"></div>
+            <div class="service-body">
+              <span class="blog-tag">Moving Tips</span>
+              <h4><a class="link-plain" href="blog.html">Office Relocation Without the Downtime</a></h4>
+              <p>How to schedule an office move so your team is working from the new address by Monday morning.</p>
+              <div class="blog-meta mb-3">
+                <span>Karthik Iyer</span><span class="dot"></span><span>Jan 5, 2026</span><span class="dot"></span><span>5 min read</span>
+              </div>
+              <a href="blog.html" class="link-arrow small">Read article <i class="bi bi-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <p class="text-center measure mx-auto mt-4 mb-0 d-none" id="blogEmpty">No articles match your search — try a different keyword or category.</p>
+
+      <nav class="d-flex justify-content-center gap-2 mt-5" aria-label="Blog pagination">
+        <button type="button" class="icon-btn" aria-label="Previous page" disabled><i class="bi bi-arrow-left"></i></button>
+        <button type="button" class="btn btn-coral btn-sm icon-tile">1</button>
+        <button type="button" class="btn btn-outline btn-sm icon-tile">2</button>
+        <button type="button" class="btn btn-outline btn-sm icon-tile">3</button>
+        <button type="button" class="icon-btn" aria-label="Next page"><i class="bi bi-arrow-right"></i></button>
+      </nav>
+    </div>
+  </section>
+
+  <section class="section bg-sunken">
+    <div class="container-wide text-center">
+      <span class="h-eyebrow">STAY IN THE LOOP</span>
+      <h2 class="mt-3 mb-4">Get new articles in your inbox</h2>
+      <form class="d-flex footer-newsletter mx-auto measure-sm" data-validate onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').innerHTML='Subscribed';">
+        <label for="blogSubEmail" class="visually-hidden">Email address</label>
+        <input type="email" id="blogSubEmail" name="email" class="form-control" placeholder="Enter your email" required data-validate="email" data-label="email address">
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container-wide section-tight">
+      <div class="row g-4 mb-5">
+        <div class="col-6 col-lg-3 footer-col">
+          <a href="index.html" class="brand-mark mb-3 d-inline-flex"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+          <p class="small mt-2">Household relocation, packed and delivered with care — across the street or across the country.</p>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Company</h6>
+          <a href="about.html">About us</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing calculator</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Services</h6>
+          <a href="services.html">Local shifting</a>
+          <a href="services.html">Intercity relocation</a>
+          <a href="services.html">Packing &amp; unpacking</a>
+          <a href="services.html">Office relocation</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Support</h6>
+          <a href="login.html">Login</a>
+          <a href="register.html">Create account</a>
+          <a href="track-move.html">Track a move</a>
+          <a href="coming-soon.html">Coming soon</a>
+          <a href="404.html">Help centre</a>
+        </div>
+      </div>
+      <div class="row g-4 align-items-center pt-4 border-top border-soft">
+        <div class="col-lg-6">
+          <form class="d-flex footer-newsletter" data-validate onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').innerHTML='Subscribed';">
+            <label for="footerEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="footerEmail" name="email" class="form-control" placeholder="Get moving tips by email" required data-validate="email" data-label="email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-lg-end gap-2 mt-3 mt-lg-0">
+          <a href="#" class="icon-btn" aria-label="MoveNest on Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 pt-4 mt-4 border-top border-soft small text-muted-2">
+        <span>&copy; 2026 MoveNest Relocation Pvt. Ltd. All rights reserved.</span>
+        <div class="d-flex gap-3">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    (function () {
+      var grid = document.getElementById("blogGrid");
+      if (!grid) return;
+      var items = Array.prototype.slice.call(grid.querySelectorAll(".blog-item"));
+      var searchInput = document.getElementById("blogSearch");
+      var filterBtns = Array.prototype.slice.call(document.querySelectorAll(".category-filter [data-category]"));
+      var emptyMsg = document.getElementById("blogEmpty");
+      var activeCategory = "all";
+
+      function applyFilters() {
+        var query = (searchInput.value || "").trim().toLowerCase();
+        var visibleCount = 0;
+        items.forEach(function (item) {
+          var matchesCategory = activeCategory === "all" || item.dataset.category === activeCategory;
+          var matchesSearch = !query || item.dataset.title.indexOf(query) !== -1;
+          var show = matchesCategory && matchesSearch;
+          item.classList.toggle("d-none", !show);
+          if (show) visibleCount++;
+        });
+        emptyMsg.classList.toggle("d-none", visibleCount !== 0);
+      }
+
+      filterBtns.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          filterBtns.forEach(function (b) { b.classList.remove("is-active"); });
+          btn.classList.add("is-active");
+          activeCategory = btn.dataset.category;
+          applyFilters();
+        });
+      });
+
+      searchInput.addEventListener("input", applyFilters);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon | MoveNest</title>
+  <meta name="description" content="MoveNest's new booking experience is on its way. Leave your email and we'll let you know the moment it launches.">
+  <link rel="canonical" href="https://www.movenest.example/pages/coming-soon.html">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Coming Soon | MoveNest">
+  <meta property="og:description" content="MoveNest's new booking experience is on its way. Leave your email and we'll let you know the moment it launches.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.movenest.example/pages/coming-soon.html">
+  <meta name="theme-color" content="#142238">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('movenest-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <div class="preloader-route"><span class="preloader-pin"></span></div>
+      <span class="preloader-word">MoveNest</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container-wide d-flex align-items-center justify-content-between header-row">
+      <a href="index.html" class="brand-mark"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+
+      <nav class="main-nav d-none d-lg-flex" aria-label="Primary">
+        <div class="dropdown">
+          <a href="index.html" class="dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false" role="button">Home</a>
+          <ul class="dropdown-menu border-0 shadow-card rounded-md p-2 dropdown-surface">
+            <li><a class="dropdown-item rounded-sm py-2" href="index.html">Home — Split Hero</a></li>
+            <li><a class="dropdown-item rounded-sm py-2" href="home-2.html">Home — The Smart Way</a></li>
+          </ul>
+        </div>
+        <a href="about.html" class="">About</a>
+        <a href="services.html" class="">Services</a>
+        <a href="how-it-works.html" class="">How It Works</a>
+        <a href="pricing.html" class="">Pricing</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-rtl-toggle aria-pressed="false" aria-label="Toggle right-to-left layout">
+          <i class="bi bi-text-right"></i>
+        </button>
+        <a href="login.html" class="btn btn-outline btn-sm d-none d-md-inline-flex">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-sm">Get a Quote</a>
+        <button type="button" class="icon-btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu">
+          <i class="bi bi-list icon-btn-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <span class="brand-mark" id="mobileNavLabel"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <a href="index.html" class="nav-link-lg">Home — Split Hero</a>
+      <a href="home-2.html" class="nav-link-lg">Home — The Smart Way</a>
+      <a href="about.html" class="nav-link-lg">About</a>
+      <a href="services.html" class="nav-link-lg">Services</a>
+      <a href="how-it-works.html" class="nav-link-lg">How It Works</a>
+      <a href="pricing.html" class="nav-link-lg">Pricing</a>
+      <a href="blog.html" class="nav-link-lg">Blog</a>
+      <a href="contact.html" class="nav-link-lg">Contact</a>
+      <div class="d-flex gap-2 mt-4">
+        <a href="login.html" class="btn btn-outline btn-block flex-fill">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-block flex-fill">Get a Quote</a>
+      </div>
+      <button type="button" class="btn btn-outline btn-sm mt-3" data-theme-toggle aria-pressed="false">
+        <i class="bi bi-moon-stars"></i> Toggle dark mode
+      </button>
+      <button type="button" class="btn btn-outline btn-sm mt-2" data-rtl-toggle aria-pressed="false">
+        <i class="bi bi-text-right"></i> Toggle RTL layout
+      </button>
+    </div>
+  </div>
+
+  <section class="state-page">
+    <div class="container-wide text-center">
+      <span class="h-eyebrow d-inline-flex">COMING SOON</span>
+      <h1 class="mt-3 mb-3">A faster way to book your move is on its way.</h1>
+      <p class="measure mx-auto mb-5">We're rebuilding the MoveNest booking experience — instant quotes, live tracking, and one dashboard for the whole move. Leave your email and we'll tell you the moment doors open.</p>
+
+      <div class="countdown mb-5" id="countdown" data-launch="2026-11-01T09:00:00+05:30" aria-live="polite">
+        <div class="countdown-box"><span class="num" data-unit="days">00</span><span class="unit">Days</span></div>
+        <div class="countdown-box"><span class="num" data-unit="hours">00</span><span class="unit">Hours</span></div>
+        <div class="countdown-box"><span class="num" data-unit="minutes">00</span><span class="unit">Minutes</span></div>
+        <div class="countdown-box"><span class="num" data-unit="seconds">00</span><span class="unit">Seconds</span></div>
+      </div>
+
+      <form class="d-flex footer-newsletter mx-auto measure-sm" data-validate onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').innerHTML='You&#39;re on the list!';">
+        <label for="notifyEmail" class="visually-hidden">Email address</label>
+        <input type="email" id="notifyEmail" name="email" class="form-control" placeholder="Enter your email" required data-validate="email" data-label="email address">
+        <button type="submit" class="btn btn-primary">Notify me</button>
+      </form>
+
+      <div class="mt-5">
+        <a href="index.html" class="link-arrow">Back to Home <i class="bi bi-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+  <footer class="site-footer">
+    <div class="container-wide section-tight">
+      <div class="row g-4 mb-5">
+        <div class="col-6 col-lg-3 footer-col">
+          <a href="index.html" class="brand-mark mb-3 d-inline-flex"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+          <p class="small mt-2">Household relocation, packed and delivered with care — across the street or across the country.</p>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Company</h6>
+          <a href="about.html">About us</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing calculator</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Services</h6>
+          <a href="services.html">Local shifting</a>
+          <a href="services.html">Intercity relocation</a>
+          <a href="services.html">Packing &amp; unpacking</a>
+          <a href="services.html">Office relocation</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Support</h6>
+          <a href="login.html">Login</a>
+          <a href="register.html">Create account</a>
+          <a href="track-move.html">Track a move</a>
+          <a href="404.html">Help centre</a>
+        </div>
+      </div>
+      <div class="row g-4 align-items-center pt-4 border-top border-soft">
+        <div class="col-lg-6">
+          <form class="d-flex footer-newsletter" data-validate onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').innerHTML='Subscribed';">
+            <label for="footerEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="footerEmail" name="email" class="form-control" placeholder="Get moving tips by email" required data-validate="email" data-label="email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-lg-end gap-2 mt-3 mt-lg-0">
+          <a href="#" class="icon-btn" aria-label="MoveNest on Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 pt-4 mt-4 border-top border-soft small text-muted-2">
+        <span>&copy; 2026 MoveNest Relocation Pvt. Ltd. All rights reserved.</span>
+        <div class="d-flex gap-3">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    (function () {
+      var el = document.getElementById("countdown");
+      if (!el) return;
+      var launch = new Date(el.dataset.launch).getTime();
+      var pad = function (n) { return String(n).padStart(2, "0"); };
+      var days = el.querySelector('[data-unit="days"]');
+      var hours = el.querySelector('[data-unit="hours"]');
+      var minutes = el.querySelector('[data-unit="minutes"]');
+      var seconds = el.querySelector('[data-unit="seconds"]');
+
+      function tick() {
+        var diff = launch - Date.now();
+        if (diff <= 0) {
+          days.textContent = hours.textContent = minutes.textContent = seconds.textContent = "00";
+          clearInterval(timer);
+          return;
+        }
+        var d = Math.floor(diff / 86400000);
+        var h = Math.floor((diff % 86400000) / 3600000);
+        var m = Math.floor((diff % 3600000) / 60000);
+        var s = Math.floor((diff % 60000) / 1000);
+        days.textContent = pad(d);
+        hours.textContent = pad(h);
+        minutes.textContent = pad(m);
+        seconds.textContent = pad(s);
+      }
+
+      tick();
+      var timer = setInterval(tick, 1000);
+    })();
+  </script>
+</body>
+</html>

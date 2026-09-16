@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register | MoveNest</title>
+  <meta name="description" content="Create a MoveNest account to request quotes, book moves, and track deliveries from one dashboard.">
+  <link rel="canonical" href="https://www.movenest.example/pages/register.html">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Register | MoveNest">
+  <meta property="og:description" content="Create a MoveNest account to request quotes, book moves, and track deliveries from one dashboard.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.movenest.example/pages/register.html">
+  <meta name="theme-color" content="#142238">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('movenest-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <div class="preloader-route"><span class="preloader-pin"></span></div>
+      <span class="preloader-word">MoveNest</span>
+    </div>
+  </div>
+  <div class="auth-shell">
+    <div class="auth-visual w-100 position-relative overflow-hidden">
+      <img src="https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=1200&auto=format&fit=crop" alt="" class="position-absolute top-0 start-0 w-100 h-100 media-faded">
+      <div class="position-relative p-5 d-flex flex-column justify-content-between h-100 w-100">
+        <a href="index.html" class="brand-mark u-text-white"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+        <div>
+          <p class="fs-5 hero-measure-white">&ldquo;The crew wrapped every piece of furniture before touching it. Nothing arrived with a scratch.&rdquo;</p>
+          <p class="small mb-0 u-text-white-75">Karthik Iyer &middot; MoveNest customer</p>
+        </div>
+      </div>
+    </div>
+    <div class="auth-form-side">
+      <div class="auth-card">
+        <a href="index.html" class="brand-mark mb-4 d-inline-flex"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+        <h2 class="mb-2">Create your account</h2>
+        <p class="text-muted-2 mb-4">Book moves and track deliveries from one place.</p>
+        <form data-validate>
+          <div class="mb-3">
+            <label class="form-label" for="regName">Full name</label>
+            <input class="form-control" id="regName" name="name" required data-label="full name">
+            <p class="field-error"></p>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="regEmail">Email</label>
+            <input type="email" class="form-control" id="regEmail" name="email" required data-validate="email" data-label="email">
+            <p class="field-error"></p>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="regPhone">Phone</label>
+            <input class="form-control" id="regPhone" name="phone" required data-validate="phone" data-label="phone number">
+            <p class="field-error"></p>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="regPass">Password</label>
+            <input type="password" class="form-control" id="regPass" name="password" required minlength="8" data-label="password">
+            <p class="field-error"></p>
+          </div>
+          <div class="mb-3">
+            <label class="form-label" for="regPass2">Confirm password</label>
+            <input type="password" class="form-control" id="regPass2" name="password2" required data-match-field="password" data-label="confirm password">
+            <p class="field-error"></p>
+          </div>
+          <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="regTerms" required>
+            <label class="form-check-label small" for="regTerms">I agree to the <a class="u-text-blue" href="404.html">Terms</a> &amp; <a class="u-text-blue" href="404.html">Privacy Policy</a>.</label>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block btn-lg mb-3">Create Account</button>
+          <p class="small text-center mb-0">Already have an account? <a href="login.html" class="fw-semibold u-text-blue">Log in</a></p>
+        </form>
+        <p class="small text-muted-2 mt-4 mb-0">This form is a design placeholder — connect it to your authentication backend to make it functional.</p>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

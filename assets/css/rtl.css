@@ -1,0 +1,54 @@
+/* =========================================================================
+   MOVENEST — RTL SUPPORT
+   Layout in style.css already leans on logical properties (padding-inline,
+   margin-inline, text-align inherited from the document) wherever possible,
+   so most of the page mirrors automatically once <html dir="rtl"> is set.
+   This file corrects the remaining physical-direction spots: decorative
+   pseudo-elements positioned with left/right, directional icons, and
+   components whose flex order should visually flip.
+   ========================================================================= */
+
+[dir="rtl"] body { text-align: right; }
+
+/* Eyebrow rule sits before the label — mirror the flex order instead of
+   the icon, since ::before has no independent direction of its own. */
+[dir="rtl"] .h-eyebrow { flex-direction: row-reverse; }
+
+/* Ticket / label notches are physically positioned; swap sides. */
+[dir="rtl"] .ticket::before { left: auto; right: -11px; }
+[dir="rtl"] .ticket::after { right: auto; left: -11px; }
+
+/* Route line dots read start-to-end; reverse so "origin" stays on the
+   reading-start side. */
+[dir="rtl"] .route-line { flex-direction: row-reverse; }
+
+/* Arrow-on-hover links point the wrong way in RTL; flip both the icon
+   glyph direction and which way it travels on hover. */
+[dir="rtl"] .link-arrow i { transform: scaleX(-1); }
+[dir="rtl"] .link-arrow:hover i { transform: scaleX(-1) translateX(4px); }
+
+/* Nav underline / active tick is already inset-agnostic (left:0; right:0),
+   no change needed there. Dashboard sidebar switches side. */
+[dir="rtl"] .dash-sidebar { border-right: none; border-left: 1px solid var(--border-soft); }
+[dir="rtl"] .dash-sidebar.open { left: auto; right: -280px; }
+@media (max-width: 991.98px) {
+  [dir="rtl"] .dash-sidebar { left: auto; right: -280px; }
+  [dir="rtl"] .dash-sidebar.open { right: 0; }
+}
+
+/* Progress route connecting line extends from the trailing side. */
+[dir="rtl"] .progress-route .p-line { left: auto; right: -50%; }
+
+/* Footer newsletter input+button pairing reverses its rounded corners. */
+[dir="rtl"] .footer-newsletter .form-control { border-radius: 0 999px 999px 0; }
+[dir="rtl"] .footer-newsletter .btn { border-radius: 999px 0 0 999px; }
+
+/* Breadcrumb and chevron separators used inline via Bootstrap Icons. */
+[dir="rtl"] .bi-chevron-right.rtl-flip,
+[dir="rtl"] .bi-arrow-right.rtl-flip {
+  transform: scaleX(-1);
+  display: inline-block;
+}
+
+/* Offcanvas mobile nav opens from the opposite edge. */
+[dir="rtl"] .offcanvas.mobile-nav { --bs-offcanvas-transition: transform .3s ease-in-out; }

@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works | MoveNest</title>
+  <meta name="description" content="See exactly how a MoveNest relocation runs, from your first quote request through packing, pickup, transit, and delivery.">
+  <link rel="canonical" href="https://www.movenest.example/pages/how-it-works.html">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+  <meta property="og:title" content="How It Works | MoveNest">
+  <meta property="og:description" content="See exactly how a MoveNest relocation runs, from your first quote request through packing, pickup, transit, and delivery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.movenest.example/pages/how-it-works.html">
+  <meta name="theme-color" content="#142238">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('movenest-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <div class="preloader-route"><span class="preloader-pin"></span></div>
+      <span class="preloader-word">MoveNest</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container-wide d-flex align-items-center justify-content-between header-row">
+      <a href="index.html" class="brand-mark"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+
+      <nav class="main-nav d-none d-lg-flex" aria-label="Primary">
+        <div class="dropdown">
+          <a href="index.html" class="dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false" role="button">Home</a>
+          <ul class="dropdown-menu border-0 shadow-card rounded-md p-2 dropdown-surface">
+            <li><a class="dropdown-item rounded-sm py-2" href="index.html">Home — Split Hero</a></li>
+            <li><a class="dropdown-item rounded-sm py-2" href="home-2.html">Home — The Smart Way</a></li>
+          </ul>
+        </div>
+        <a href="about.html" class="">About</a>
+        <a href="services.html" class="">Services</a>
+        <a href="how-it-works.html" class="active">How It Works</a>
+        <a href="pricing.html" class="">Pricing</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-rtl-toggle aria-pressed="false" aria-label="Toggle right-to-left layout">
+          <i class="bi bi-text-right"></i>
+        </button>
+        <a href="login.html" class="btn btn-outline btn-sm d-none d-md-inline-flex">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-sm">Get a Quote</a>
+        <button type="button" class="icon-btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu">
+          <i class="bi bi-list icon-btn-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <span class="brand-mark" id="mobileNavLabel"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <a href="index.html" class="nav-link-lg">Home — Split Hero</a>
+      <a href="home-2.html" class="nav-link-lg">Home — The Smart Way</a>
+      <a href="about.html" class="nav-link-lg">About</a>
+      <a href="services.html" class="nav-link-lg">Services</a>
+      <a href="how-it-works.html" class="nav-link-lg">How It Works</a>
+      <a href="pricing.html" class="nav-link-lg">Pricing</a>
+      <a href="blog.html" class="nav-link-lg">Blog</a>
+      <a href="contact.html" class="nav-link-lg">Contact</a>
+      <div class="d-flex gap-2 mt-4">
+        <a href="login.html" class="btn btn-outline btn-block flex-fill">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-block flex-fill">Get a Quote</a>
+      </div>
+      <button type="button" class="btn btn-outline btn-sm mt-3" data-theme-toggle aria-pressed="false">
+        <i class="bi bi-moon-stars"></i> Toggle dark mode
+      </button>
+      <button type="button" class="btn btn-outline btn-sm mt-2" data-rtl-toggle aria-pressed="false">
+        <i class="bi bi-text-right"></i> Toggle RTL layout
+      </button>
+    </div>
+  </div>
+
+  <section class="page-banner">
+    <div class="page-banner-media"><img src="../assets/images/Tanspotation.jpg" alt="MoveNest truck in transit"></div>
+    <span class="page-banner-scrim" aria-hidden="true"></span>
+    <div class="container-wide page-banner-inner">
+      <nav class="page-banner-crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span class="current">How It Works</span>
+      </nav>
+      <h1>How It Works</h1>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container-wide">
+      <span class="h-eyebrow">HOW IT WORKS</span>
+      <h2 class="mt-3 mb-3">Seven stages, one coordinator, zero guesswork</h2>
+      <p class="measure fs-5">Here's exactly what happens after you request a quote — and what we need from you at each stage.</p>
+    </div>
+  </section>
+
+  <section class="section pt-0">
+    <div class="container-wide">
+      
+    <div class="row g-4 align-items-center py-4 border-bottom border-soft reveal">
+      <div class="col-md-4">
+        <div class="editorial-media aspect-4-3"><img src="../assets/images/work1.jpg" alt="Tell us about your move"></div>
+      </div>
+      <div class="col-md-8">
+        <span class="mono-code text-muted-2">01</span>
+        <h4 class="mt-1 mb-2">Tell us about your move</h4>
+        <p class="mb-3">Share your pickup and delivery address, home size, and preferred date.</p>
+        <div class="row g-3 small">
+          <div class="col-sm-6"><strong class="d-block mb-1">Expected action</strong><span class="text-muted-2">We use these to prepare an accurate quote.</span></div>
+          <div class="col-sm-6"><strong class="d-block mb-1">Your part</strong><span class="text-muted-2">Fill in the quote form or call our team.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 align-items-center py-4 border-bottom border-soft reveal">
+      <div class="col-md-4">
+        <div class="editorial-media aspect-4-3"><img src="../assets/images/work2.jpg" alt="Get your estimate"></div>
+      </div>
+      <div class="col-md-8">
+        <span class="mono-code text-muted-2">02</span>
+        <h4 class="mt-1 mb-2">Get your estimate</h4>
+        <p class="mb-3">We send an itemised estimate covering packing, transport, and handling.</p>
+        <div class="row g-3 small">
+          <div class="col-sm-6"><strong class="d-block mb-1">Expected action</strong><span class="text-muted-2">The estimate is ready within minutes for local moves.</span></div>
+          <div class="col-sm-6"><strong class="d-block mb-1">Your part</strong><span class="text-muted-2">Review the breakdown and ask about anything unclear.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 align-items-center py-4 border-bottom border-soft reveal">
+      <div class="col-md-4">
+        <div class="editorial-media aspect-4-3"><img src="../assets/images/work3.jpg" alt="Confirm your booking"></div>
+      </div>
+      <div class="col-md-8">
+        <span class="mono-code text-muted-2">03</span>
+        <h4 class="mt-1 mb-2">Confirm your booking</h4>
+        <p class="mb-3">Approve the quote and choose your moving date and time slot.</p>
+        <div class="row g-3 small">
+          <div class="col-sm-6"><strong class="d-block mb-1">Expected action</strong><span class="text-muted-2">Your booking ID is generated immediately.</span></div>
+          <div class="col-sm-6"><strong class="d-block mb-1">Your part</strong><span class="text-muted-2">Share any special instructions for fragile or bulky items.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 align-items-center py-4 border-bottom border-soft reveal">
+      <div class="col-md-4">
+        <div class="editorial-media aspect-4-3"><img src="../assets/images/work4.jpg" alt="Packing crew assigned"></div>
+      </div>
+      <div class="col-md-8">
+        <span class="mono-code text-muted-2">04</span>
+        <h4 class="mt-1 mb-2">Packing crew assigned</h4>
+        <p class="mb-3">A trained crew and move coordinator are assigned to your booking.</p>
+        <div class="row g-3 small">
+          <div class="col-sm-6"><strong class="d-block mb-1">Expected action</strong><span class="text-muted-2">You receive their contact details in advance.</span></div>
+          <div class="col-sm-6"><strong class="d-block mb-1">Your part</strong><span class="text-muted-2">Set aside items you're packing yourself, if any.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 align-items-center py-4 border-bottom border-soft reveal">
+      <div class="col-md-4">
+        <div class="editorial-media aspect-4-3"><img src="../assets/images/work5.jpg" alt="Pickup &amp; transport"></div>
+      </div>
+      <div class="col-md-8">
+        <span class="mono-code text-muted-2">05</span>
+        <h4 class="mt-1 mb-2">Pickup &amp; transport</h4>
+        <p class="mb-3">The crew arrives, packs remaining items, and loads the truck.</p>
+        <div class="row g-3 small">
+          <div class="col-sm-6"><strong class="d-block mb-1">Expected action</strong><span class="text-muted-2">Loading is inventoried so nothing is missed.</span></div>
+          <div class="col-sm-6"><strong class="d-block mb-1">Your part</strong><span class="text-muted-2">Do a final walkthrough with the crew before they leave.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 align-items-center py-4 border-bottom border-soft reveal">
+      <div class="col-md-4">
+        <div class="editorial-media aspect-4-3"><img src="../assets/images/work6.jpg" alt="Delivery"></div>
+      </div>
+      <div class="col-md-8">
+        <span class="mono-code text-muted-2">06</span>
+        <h4 class="mt-1 mb-2">Delivery</h4>
+        <p class="mb-3">Your belongings arrive at the new address within the agreed window.</p>
+        <div class="row g-3 small">
+          <div class="col-sm-6"><strong class="d-block mb-1">Expected action</strong><span class="text-muted-2">Furniture is placed where you want it.</span></div>
+          <div class="col-sm-6"><strong class="d-block mb-1">Your part</strong><span class="text-muted-2">Check the inventory list as items are unloaded.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="row g-4 align-items-center py-4 border-bottom border-soft reveal">
+      <div class="col-md-4">
+        <div class="editorial-media aspect-4-3"><img src="../assets/images/work7.jpg" alt="Move completed"></div>
+      </div>
+      <div class="col-md-8">
+        <span class="mono-code text-muted-2">07</span>
+        <h4 class="mt-1 mb-2">Move completed</h4>
+        <p class="mb-3">Sign off on delivery and receive your final invoice.</p>
+        <div class="row g-3 small">
+          <div class="col-sm-6"><strong class="d-block mb-1">Expected action</strong><span class="text-muted-2">Your coordinator follows up within 48 hours.</span></div>
+          <div class="col-sm-6"><strong class="d-block mb-1">Your part</strong><span class="text-muted-2">Flag anything for our damage-protection process, if needed.</span></div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section bg-sunken text-center">
+    <div class="container-wide">
+      <span class="h-eyebrow">READY WHEN YOU ARE</span>
+      <h2 class="mt-3 mb-4">Start with stage one — tell us about your move</h2>
+      <a href="pricing.html" class="btn btn-coral btn-lg">Get a Moving Quote</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container-wide section-tight">
+      <div class="row g-4 mb-5">
+        <div class="col-6 col-lg-3 footer-col">
+          <a href="index.html" class="brand-mark mb-3 d-inline-flex"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+          <p class="small mt-2">Household relocation, packed and delivered with care — across the street or across the country.</p>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Company</h6>
+          <a href="about.html">About us</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing calculator</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Services</h6>
+          <a href="services.html">Local shifting</a>
+          <a href="services.html">Intercity relocation</a>
+          <a href="services.html">Packing &amp; unpacking</a>
+          <a href="services.html">Office relocation</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Support</h6>
+          <a href="login.html">Login</a>
+          <a href="register.html">Create account</a>
+          <a href="track-move.html">Track a move</a>
+          <a href="coming-soon.html">Coming soon</a>
+          <a href="404.html">Help centre</a>
+        </div>
+      </div>
+      <div class="row g-4 align-items-center pt-4 border-top border-soft">
+        <div class="col-lg-6">
+          <form class="d-flex footer-newsletter" data-validate onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').innerHTML='Subscribed';">
+            <label for="footerEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="footerEmail" name="email" class="form-control" placeholder="Get moving tips by email" required data-validate="email" data-label="email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-lg-end gap-2 mt-3 mt-lg-0">
+          <a href="#" class="icon-btn" aria-label="MoveNest on Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 pt-4 mt-4 border-top border-soft small text-muted-2">
+        <span>&copy; 2026 MoveNest Relocation Pvt. Ltd. All rights reserved.</span>
+        <div class="d-flex gap-3">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

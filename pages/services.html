@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | MoveNest</title>
+  <meta name="description" content="Explore MoveNest's household relocation services: local shifting, intercity moves, packing, office relocation, furniture handling, and vehicle transport.">
+  <link rel="canonical" href="https://www.movenest.example/pages/services.html">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Services | MoveNest">
+  <meta property="og:description" content="Explore MoveNest's household relocation services: local shifting, intercity moves, packing, office relocation, furniture handling, and vehicle transport.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.movenest.example/pages/services.html">
+  <meta name="theme-color" content="#142238">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('movenest-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <div class="preloader-route"><span class="preloader-pin"></span></div>
+      <span class="preloader-word">MoveNest</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container-wide d-flex align-items-center justify-content-between header-row">
+      <a href="index.html" class="brand-mark"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+
+      <nav class="main-nav d-none d-lg-flex" aria-label="Primary">
+        <div class="dropdown">
+          <a href="index.html" class="dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false" role="button">Home</a>
+          <ul class="dropdown-menu border-0 shadow-card rounded-md p-2 dropdown-surface">
+            <li><a class="dropdown-item rounded-sm py-2" href="index.html">Home — Split Hero</a></li>
+            <li><a class="dropdown-item rounded-sm py-2" href="home-2.html">Home — The Smart Way</a></li>
+          </ul>
+        </div>
+        <a href="about.html" class="">About</a>
+        <a href="services.html" class="active">Services</a>
+        <a href="how-it-works.html" class="">How It Works</a>
+        <a href="pricing.html" class="">Pricing</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-rtl-toggle aria-pressed="false" aria-label="Toggle right-to-left layout">
+          <i class="bi bi-text-right"></i>
+        </button>
+        <a href="login.html" class="btn btn-outline btn-sm d-none d-md-inline-flex">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-sm">Get a Quote</a>
+        <button type="button" class="icon-btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu">
+          <i class="bi bi-list icon-btn-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <span class="brand-mark" id="mobileNavLabel"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <a href="index.html" class="nav-link-lg">Home — Split Hero</a>
+      <a href="home-2.html" class="nav-link-lg">Home — The Smart Way</a>
+      <a href="about.html" class="nav-link-lg">About</a>
+      <a href="services.html" class="nav-link-lg">Services</a>
+      <a href="how-it-works.html" class="nav-link-lg">How It Works</a>
+      <a href="pricing.html" class="nav-link-lg">Pricing</a>
+      <a href="blog.html" class="nav-link-lg">Blog</a>
+      <a href="contact.html" class="nav-link-lg">Contact</a>
+      <div class="d-flex gap-2 mt-4">
+        <a href="login.html" class="btn btn-outline btn-block flex-fill">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-block flex-fill">Get a Quote</a>
+      </div>
+      <button type="button" class="btn btn-outline btn-sm mt-3" data-theme-toggle aria-pressed="false">
+        <i class="bi bi-moon-stars"></i> Toggle dark mode
+      </button>
+      <button type="button" class="btn btn-outline btn-sm mt-2" data-rtl-toggle aria-pressed="false">
+        <i class="bi bi-text-right"></i> Toggle RTL layout
+      </button>
+    </div>
+  </div>
+
+  <section class="page-banner">
+    <div class="page-banner-media"><img src="../assets/images/service1.jpg" alt="MoveNest crew handling moving services"></div>
+    <span class="page-banner-scrim" aria-hidden="true"></span>
+    <div class="container-wide page-banner-inner">
+      <nav class="page-banner-crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span class="current">Services</span>
+      </nav>
+      <h1>Services</h1>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container-wide">
+      <span class="h-eyebrow">SERVICES</span>
+      <h2 class="mt-3 mb-3">Everything you need for a smooth move</h2>
+      <p class="measure fs-5">Pick a single service or bundle several into one booking — your move coordinator scopes it out on your quote call.</p>
+    </div>
+  </section>
+
+  <section class="section pt-0">
+    <div class="container-wide">
+      <div class="row g-4">
+      <div class="col-md-6 reveal">
+        <div class="service-card">
+          <div class="service-img"><img src="../assets/images/Local shifting.jpg" alt="Local home shifting"></div>
+          <div class="service-body">
+            <h4>Local home shifting</h4>
+            <p>Same-city relocation for apartments, independent houses, and studios — scheduled around your day, with everything wrapped and back in place.</p>
+            <ul class="list-unstyled small mb-3 feature-list"><li><i class="bi bi-check2 check-icon"></i> Furniture disassembly &amp; reassembly</li><li><i class="bi bi-check2 check-icon"></i> Room-by-room box labelling</li><li><i class="bi bi-check2 check-icon"></i> Loading, transport, unloading</li><li><i class="bi bi-check2 check-icon"></i> Placement in your new home</li></ul>
+            <p class="small text-muted-2 mb-3"><strong>Ideal for:</strong> Studio to 4 BHK moves within  city</p>
+            <a href="pricing.html" class="link-arrow small">Get a quote for this service <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="service-card">
+          <div class="service-img"><img src="../assets/images/Intercity relocation.jpg" alt="Intercity relocation"></div>
+          <div class="service-body">
+            <h4>Intercity relocation</h4>
+            <p>Long-distance household moves with a single coordinated truck run, transit tracking, and a delivery window agreed before pickup.</p>
+            <ul class="list-unstyled small mb-3 feature-list"><li><i class="bi bi-check2 check-icon"></i> Route-planned transport</li><li><i class="bi bi-check2 check-icon"></i> Transit insurance option</li><li><i class="bi bi-check2 check-icon"></i> Live tracking updates</li><li><i class="bi bi-check2 check-icon"></i> Scheduled delivery window</li></ul>
+            <p class="small text-muted-2 mb-3"><strong>Ideal for:</strong> Moves between cities and states</p>
+            <a href="pricing.html" class="link-arrow small">Get a quote for this service <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="service-card">
+          <div class="service-img"><img src="../assets/images/Packing only.jpg" alt="Packing &amp; unpacking"></div>
+          <div class="service-body">
+            <h4>Packing &amp; unpacking</h4>
+            <p>Professional packing using protective, reusable materials — from kitchenware to electronics — with unpacking available at your new address.</p>
+            <ul class="list-unstyled small mb-3 feature-list"><li><i class="bi bi-check2 check-icon"></i> Fragile-item protection</li><li><i class="bi bi-check2 check-icon"></i> Labelled, inventoried cartons</li><li><i class="bi bi-check2 check-icon"></i> Unpacking on request</li><li><i class="bi bi-check2 check-icon"></i> Packing material pickup after</li></ul>
+            <p class="small text-muted-2 mb-3"><strong>Ideal for:</strong> Households who want the packing handled end-to-end</p>
+            <a href="pricing.html" class="link-arrow small">Get a quote for this service <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="service-card">
+          <div class="service-img"><img src="../assets/images/Office shifting.jpg" alt="Office relocation"></div>
+          <div class="service-body">
+            <h4>Office relocation</h4>
+            <p>Desk-to-desk commercial moves planned around business hours, with equipment handling and minimal operational downtime.</p>
+            <ul class="list-unstyled small mb-3 feature-list"><li><i class="bi bi-check2 check-icon"></i> IT &amp; equipment handling</li><li><i class="bi bi-check2 check-icon"></i> Weekend/after-hours scheduling</li><li><i class="bi bi-check2 check-icon"></i> Workstation labelling &amp; layout map</li><li><i class="bi bi-check2 check-icon"></i> Same-day setup at new office</li></ul>
+            <p class="small text-muted-2 mb-3"><strong>Ideal for:</strong> Small to mid-size office and workspace moves</p>
+            <a href="pricing.html" class="link-arrow small">Get a quote for this service <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="service-card">
+          <div class="service-img"><img src="../assets/images/Transit.jpg" alt="Furniture moving"></div>
+          <div class="service-body">
+            <h4>Furniture moving</h4>
+            <p>Large and delicate furniture handled with dollies, blankets, and disassembly where needed — sofas, wardrobes, pianos, and more.</p>
+            <ul class="list-unstyled small mb-3 feature-list"><li><i class="bi bi-check2 check-icon"></i> Disassembly &amp; reassembly</li><li><i class="bi bi-check2 check-icon"></i> Corner and doorway protection</li><li><i class="bi bi-check2 check-icon"></i> Multi-person lifting for heavy pieces</li><li><i class="bi bi-check2 check-icon"></i> Placement exactly where you want it</li></ul>
+            <p class="small text-muted-2 mb-3"><strong>Ideal for:</strong> Single large items or full-home furniture moves</p>
+            <a href="pricing.html" class="link-arrow small">Get a quote for this service <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 reveal">
+        <div class="service-card">
+          <div class="service-img"><img src="../assets/images/Tanspotation.jpg" alt="Vehicle transportation"></div>
+          <div class="service-body">
+            <h4>Vehicle transportation</h4>
+            <p>Two- and four-wheeler transport alongside your household move, so your vehicle arrives around the same time you do.</p>
+            <ul class="list-unstyled small mb-3 feature-list"><li><i class="bi bi-check2 check-icon"></i> Enclosed carrier transport</li><li><i class="bi bi-check2 check-icon"></i> Pre-move condition photos</li><li><i class="bi bi-check2 check-icon"></i> Delivery to your new address</li><li><i class="bi bi-check2 check-icon"></i> Optional insurance add-on</li></ul>
+            <p class="small text-muted-2 mb-3"><strong>Ideal for:</strong> Households relocating with a car or bike</p>
+            <a href="pricing.html" class="link-arrow small">Get a quote for this service <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section bg-sunken">
+    <div class="container-wide text-center">
+      <span class="h-eyebrow">NOT SURE WHERE TO START?</span>
+      <h2 class="mt-3 mb-4">Run the numbers on your move in under a minute</h2>
+      <a href="pricing.html" class="btn btn-coral btn-lg">Calculate Your Estimate</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container-wide section-tight">
+      <div class="row g-4 mb-5">
+        <div class="col-6 col-lg-3 footer-col">
+          <a href="index.html" class="brand-mark mb-3 d-inline-flex"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+          <p class="small mt-2">Household relocation, packed and delivered with care — across the street or across the country.</p>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Company</h6>
+          <a href="about.html">About us</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing calculator</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Services</h6>
+          <a href="services.html">Local shifting</a>
+          <a href="services.html">Intercity relocation</a>
+          <a href="services.html">Packing &amp; unpacking</a>
+          <a href="services.html">Office relocation</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Support</h6>
+          <a href="login.html">Login</a>
+          <a href="register.html">Create account</a>
+          <a href="track-move.html">Track a move</a>
+          <a href="coming-soon.html">Coming soon</a>
+          <a href="404.html">Help centre</a>
+        </div>
+      </div>
+      <div class="row g-4 align-items-center pt-4 border-top border-soft">
+        <div class="col-lg-6">
+          <form class="d-flex footer-newsletter" data-validate onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').innerHTML='Subscribed';">
+            <label for="footerEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="footerEmail" name="email" class="form-control" placeholder="Get moving tips by email" required data-validate="email" data-label="email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-lg-end gap-2 mt-3 mt-lg-0">
+          <a href="#" class="icon-btn" aria-label="MoveNest on Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 pt-4 mt-4 border-top border-soft small text-muted-2">
+        <span>&copy; 2026 MoveNest Relocation Pvt. Ltd. All rights reserved.</span>
+        <div class="d-flex gap-3">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* =========================================================================
+   MOVENEST — DARK MODE SUPPLEMENT
+   Most theming lives in style.css as CSS custom properties, flipped by
+   [data-theme="dark"] on <html>. This file only holds the handful of fixes
+   that variables alone can't express: image treatment, icon contrast on
+   photography, and third-party (Bootstrap) control overrides.
+   ========================================================================= */
+
+[data-theme="dark"] {
+  color-scheme: dark;
+}
+
+/* Photography reads too bright against a near-black page — settle it down
+   slightly rather than leaving full-brightness daylight photos floating. */
+[data-theme="dark"] .service-card img,
+[data-theme="dark"] .editorial-media img,
+[data-theme="dark"] .hero-media img,
+[data-theme="dark"] .auth-visual img {
+  filter: brightness(0.86) saturate(1.02);
+}
+
+/* Icon badges placed directly over photography need a solid chip in dark
+   mode so they never disappear against dark image regions. */
+[data-theme="dark"] .hero-stats-float,
+[data-theme="dark"] .ticket {
+  border-color: var(--border);
+}
+
+/* Bootstrap Icons inherit currentColor already; only close/caret glyphs
+   baked into Bootstrap's own CSS (background-image SVGs) need swapping. */
+[data-theme="dark"] .btn-close {
+  filter: invert(1) grayscale(1) brightness(1.6);
+}
+
+[data-theme="dark"] .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* Form placeholder contrast */
+[data-theme="dark"] ::placeholder {
+  color: var(--text-faint);
+  opacity: 1;
+}
+
+/* Bootstrap's own text utilities (.text-body, .text-muted, .text-dark,
+   .text-secondary) are colored via Bootstrap's own CSS variables, which
+   are never flipped by our [data-theme="dark"] attribute (Bootstrap only
+   flips them under its own [data-bs-theme]). Left alone, these classes
+   keep their light-mode dark-gray value and become unreadable on our
+   dark background — this is what made the service list titles/labels on
+   Home 2 (and any other .text-muted / .text-body copy site-wide)
+   disappear in dark mode. Re-point them at our own theme tokens. */
+[data-theme="dark"] .text-body,
+[data-theme="dark"] .text-dark {
+  color: var(--text) !important;
+}
+
+[data-theme="dark"] .text-muted,
+[data-theme="dark"] .text-secondary {
+  color: var(--text-muted) !important;
+}
+
+/* Table stripes / hovers use pure-white overlays by default in Bootstrap;
+   swap to a tint that respects the dark surface. */
+[data-theme="dark"] .table {
+  --bs-table-color: var(--text);
+  --bs-table-bg: transparent;
+  --bs-table-border-color: var(--border-soft);
+}
+
+/* Skeleton loaders already themed via variables in style.css; nothing
+   additional needed here beyond the shimmer overlay defined there. */

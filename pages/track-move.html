@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Move | MoveNest</title>
+  <meta name="description" content="Track your MoveNest relocation in real time — from booking confirmation through packing, pickup, transit, and delivery.">
+  <link rel="canonical" href="https://www.movenest.example/pages/track-move.html">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Track Move | MoveNest">
+  <meta property="og:description" content="Track your MoveNest relocation in real time — from booking confirmation through packing, pickup, transit, and delivery.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.movenest.example/pages/track-move.html">
+  <meta name="theme-color" content="#142238">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('movenest-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <div class="preloader-route"><span class="preloader-pin"></span></div>
+      <span class="preloader-word">MoveNest</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container-wide d-flex align-items-center justify-content-between header-row">
+      <a href="index.html" class="brand-mark"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+
+      <nav class="main-nav d-none d-lg-flex" aria-label="Primary">
+        <div class="dropdown">
+          <a href="index.html" class="dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false" role="button">Home</a>
+          <ul class="dropdown-menu border-0 shadow-card rounded-md p-2 dropdown-surface">
+            <li><a class="dropdown-item rounded-sm py-2" href="index.html">Home — Split Hero</a></li>
+            <li><a class="dropdown-item rounded-sm py-2" href="home-2.html">Home — The Smart Way</a></li>
+          </ul>
+        </div>
+        <a href="about.html" class="">About</a>
+        <a href="services.html" class="">Services</a>
+        <a href="how-it-works.html" class="">How It Works</a>
+        <a href="pricing.html" class="">Pricing</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-rtl-toggle aria-pressed="false" aria-label="Toggle right-to-left layout">
+          <i class="bi bi-text-right"></i>
+        </button>
+        <a href="login.html" class="btn btn-outline btn-sm d-none d-md-inline-flex">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-sm">Get a Quote</a>
+        <button type="button" class="icon-btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu">
+          <i class="bi bi-list icon-btn-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <span class="brand-mark" id="mobileNavLabel"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <a href="index.html" class="nav-link-lg">Home — Split Hero</a>
+      <a href="home-2.html" class="nav-link-lg">Home — The Smart Way</a>
+      <a href="about.html" class="nav-link-lg">About</a>
+      <a href="services.html" class="nav-link-lg">Services</a>
+      <a href="how-it-works.html" class="nav-link-lg">How It Works</a>
+      <a href="pricing.html" class="nav-link-lg">Pricing</a>
+      <a href="blog.html" class="nav-link-lg">Blog</a>
+      <a href="contact.html" class="nav-link-lg">Contact</a>
+      <div class="d-flex gap-2 mt-4">
+        <a href="login.html" class="btn btn-outline btn-block flex-fill">Login</a>
+        <a href="contact.html" class="btn btn-coral btn-block flex-fill">Get a Quote</a>
+      </div>
+      <button type="button" class="btn btn-outline btn-sm mt-3" data-theme-toggle aria-pressed="false">
+        <i class="bi bi-moon-stars"></i> Toggle dark mode
+      </button>
+      <button type="button" class="btn btn-outline btn-sm mt-2" data-rtl-toggle aria-pressed="false">
+        <i class="bi bi-text-right"></i> Toggle RTL layout
+      </button>
+    </div>
+  </div>
+
+  <section class="page-banner">
+    <div class="page-banner-media"><img src="../assets/images/Transit.jpg" alt="A MoveNest truck in transit"></div>
+    <span class="page-banner-scrim" aria-hidden="true"></span>
+    <div class="container-wide page-banner-inner">
+      <nav class="page-banner-crumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a><span class="sep">/</span><span class="current">Track Move</span>
+      </nav>
+      <h1>Track Your Move</h1>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="container-wide">
+      <h2 class="mt-3 mb-4">Move #MN-24891</h2>
+
+      <div class="ticket p-4 p-lg-5">
+        <div class="d-flex justify-content-between align-items-start flex-wrap gap-3 mb-3">
+          <div class="route-line">
+            <span class="dot"></span><strong>Mumbai</strong>
+            <span class="bar route-bar-sm"></span>
+            <span class="dot end"></span><strong>Chennai</strong>
+          </div>
+          <span class="badge rounded-pill badge-amber-soft">In transit</span>
+        </div>
+
+        <div class="progress-route">
+          <div class="p-step done"><div class="p-line"></div><div class="p-dot"></div><span class="p-cap">Confirmed</span></div>
+<div class="p-step done"><div class="p-line"></div><div class="p-dot"></div><span class="p-cap">Crew Assigned</span></div>
+<div class="p-step done"><div class="p-line"></div><div class="p-dot"></div><span class="p-cap">Packing</span></div>
+<div class="p-step done"><div class="p-line"></div><div class="p-dot"></div><span class="p-cap">Pickup</span></div>
+<div class="p-step current"><div class="p-line"></div><div class="p-dot"></div><span class="p-cap">In Transit</span></div>
+<div class="p-step "><div class="p-line"></div><div class="p-dot"></div><span class="p-cap">Delivered</span></div>
+
+        </div>
+
+        <div class="row g-4 mt-2">
+          <div class="col-md-6">
+            <h6 class="mb-3">Detailed status</h6>
+            <ul class="status-list">
+              <li class="done"><span class="s-dot"><i class="bi bi-check"></i></span> Booking request</li>
+<li class="done"><span class="s-dot"><i class="bi bi-check"></i></span> Booking confirmed</li>
+<li class="done"><span class="s-dot"><i class="bi bi-check"></i></span> Packing crew assigned</li>
+<li class="done"><span class="s-dot"><i class="bi bi-check"></i></span> Packing started</li>
+<li class="done"><span class="s-dot"><i class="bi bi-check"></i></span> Packing completed</li>
+<li class="done"><span class="s-dot"><i class="bi bi-check"></i></span> Pickup completed</li>
+<li class="current"><span class="s-dot"></span> In transit</li>
+<li><span class="s-dot"></span> Arrived at destination</li>
+<li><span class="s-dot"></span> Delivery started</li>
+<li><span class="s-dot"></span> Delivered</li>
+
+            </ul>
+          </div>
+          <div class="col-md-6">
+            <h6 class="mb-3">Move details</h6>
+            <div class="row g-3 small mb-4">
+              <div class="col-6"><span class="text-muted-2 d-block">Pickup date</span><strong>15 Oct 2026</strong></div>
+              <div class="col-6"><span class="text-muted-2 d-block">Delivery estimate</span><strong>18 Oct 2026</strong></div>
+              <div class="col-6"><span class="text-muted-2 d-block">Home size</span><strong>2 BHK</strong></div>
+              <div class="col-6"><span class="text-muted-2 d-block">Vehicle</span><strong>Standard truck</strong></div>
+            </div>
+            <div class="bg-sunken rounded-md p-3 d-flex align-items-center gap-3 mb-3">
+              <img src="https://randomuser.me/api/portraits/women/29.jpg" alt="Divya Suresh" class="rounded-circle avatar-44">
+              <div><span class="small text-muted-2 d-block">Move coordinator</span><strong>Divya Suresh &middot; +91 98765 43210</strong></div>
+            </div>
+            <div class="bg-sunken rounded-md p-3 d-flex align-items-center gap-3">
+              <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="Arjun Das" class="rounded-circle avatar-44">
+              <div><span class="small text-muted-2 d-block">Crew contact</span><strong>Arjun Das &middot; +91 91234 56789</strong></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-5">
+        <p class="text-muted-2 mb-3">Have a different move to track?</p>
+        <form class="d-flex justify-content-center gap-2 measure-sm-center">
+          <input class="form-control" placeholder="Enter your move ID, e.g. MN-24891">
+          <button class="btn btn-primary" type="submit">Track</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container-wide section-tight">
+      <div class="row g-4 mb-5">
+        <div class="col-6 col-lg-3 footer-col">
+          <a href="index.html" class="brand-mark mb-3 d-inline-flex"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+          <p class="small mt-2">Household relocation, packed and delivered with care — across the street or across the country.</p>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Company</h6>
+          <a href="about.html">About us</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing calculator</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Services</h6>
+          <a href="services.html">Local shifting</a>
+          <a href="services.html">Intercity relocation</a>
+          <a href="services.html">Packing &amp; unpacking</a>
+          <a href="services.html">Office relocation</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Support</h6>
+          <a href="login.html">Login</a>
+          <a href="register.html">Create account</a>
+          <a href="track-move.html">Track a move</a>
+          <a href="coming-soon.html">Coming soon</a>
+          <a href="404.html">Help centre</a>
+        </div>
+      </div>
+      <div class="row g-4 align-items-center pt-4 border-top border-soft">
+        <div class="col-lg-6">
+          <form class="d-flex footer-newsletter" data-validate onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').innerHTML='Subscribed';">
+            <label for="footerEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="footerEmail" name="email" class="form-control" placeholder="Get moving tips by email" required data-validate="email" data-label="email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-lg-end gap-2 mt-3 mt-lg-0">
+          <a href="#" class="icon-btn" aria-label="MoveNest on Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 pt-4 mt-4 border-top border-soft small text-muted-2">
+        <span>&copy; 2026 MoveNest Relocation Pvt. Ltd. All rights reserved.</span>
+        <div class="d-flex gap-3">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="404.html">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>

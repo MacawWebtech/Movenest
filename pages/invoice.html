@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Invoice Details | MoveNest</title>
+  <meta name="description" content="View and download your itemised MoveNest invoice, including the full charge breakdown for your move.">
+  <link rel="canonical" href="https://www.movenest.example/pages/invoice.html">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Invoice Details | MoveNest">
+  <meta property="og:description" content="View and download your itemised MoveNest invoice, including the full charge breakdown for your move.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.movenest.example/pages/invoice.html">
+  <meta name="theme-color" content="#142238">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('movenest-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <div class="preloader-route"><span class="preloader-pin"></span></div>
+      <span class="preloader-word">MoveNest</span>
+    </div>
+  </div>
+  <div class="dash-shell">
+    <aside class="dash-sidebar">
+      <a href="index.html" class="brand-mark mb-4 d-inline-flex px-2"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+      <nav class="nav flex-column">
+        <a href="dashboard.html" class="nav-link "><i class="bi bi-grid-1x2"></i> Dashboard</a>
+<a href="booking.html" class="nav-link "><i class="bi bi-plus-square"></i> New Booking</a>
+<a href="track-move.html" class="nav-link "><i class="bi bi-geo-alt"></i> Track Move</a>
+<a href="invoice.html" class="nav-link active"><i class="bi bi-receipt"></i> Invoices</a>
+<a href="dashboard.html#messages" class="nav-link "><i class="bi bi-chat-dots"></i> Messages</a>
+<a href="profile.html" class="nav-link "><i class="bi bi-person"></i> Profile</a>
+<a href="profile.html#settings" class="nav-link "><i class="bi bi-gear"></i> Settings</a>
+
+        <a href="index.html" class="nav-link mt-3 border-top border-soft pt-3"><i class="bi bi-box-arrow-left"></i> Logout</a>
+      </nav>
+    </aside>
+    <div class="dash-scrim"></div>
+    <main class="dash-main">
+      <div class="d-flex align-items-center justify-content-between mb-4 no-print">
+        <div class="d-flex align-items-center gap-3">
+          <button class="icon-btn d-lg-none" data-sidebar-toggle aria-label="Open menu"><i class="bi bi-list"></i></button>
+          <h1 class="h3 mb-0">Invoice</h1>
+        </div>
+        <div class="d-flex gap-2">
+          <button class="btn btn-outline btn-sm" data-print><i class="bi bi-printer"></i> Print Invoice</button>
+          <button class="btn btn-primary btn-sm" data-print><i class="bi bi-download"></i> Download Invoice</button>
+        </div>
+      </div>
+
+      <div class="invoice-sheet">
+        <div class="d-flex justify-content-between flex-wrap gap-4 mb-5 pb-4 border-bottom border-soft">
+          <div>
+            <span class="brand-mark d-inline-flex mb-2"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></span>
+            <p class="small mb-0">14 Anna Salai, Teynampet<br>Chennai, Tamil Nadu 600018<br>hello@movenest.example</p>
+          </div>
+          <div class="text-md-end">
+            <h4 class="mb-1">Invoice</h4>
+            <span class="mono-code text-muted-2">#INV-2026-24891</span>
+            <p class="small mb-0 mt-2">Issued: 18 Oct 2026<br>Move ID: MN-24891</p>
+          </div>
+        </div>
+
+        <div class="row g-4 mb-5">
+          <div class="col-md-4">
+            <h6 class="text-muted-2 small text-uppercase mb-2">Customer</h6>
+            <p class="mb-0">Ananya Rao<br>+91 98450 11223<br>ananya.rao@example.com</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="text-muted-2 small text-uppercase mb-2">Pickup address</h6>
+            <p class="mb-0">Flat 4B, Lakeview Residency<br>Nungambakkam, Chennai 600034</p>
+          </div>
+          <div class="col-md-4">
+            <h6 class="text-muted-2 small text-uppercase mb-2">Delivery address</h6>
+            <p class="mb-0">Flat 12A, Palm Meadows<br>Indiranagar, Bengaluru 560038</p>
+          </div>
+        </div>
+
+        <h6 class="mb-3">Charge breakdown</h6>
+        <table class="invoice-table mb-4">
+          <thead><tr><th>Description</th><th class="text-end">Amount</th></tr></thead>
+          <tbody>
+            <tr><td>Packing</td><td class="text-end mono-code">₹4,500</td></tr><tr><td>Loading</td><td class="text-end mono-code">₹2,000</td></tr><tr><td>Transportation</td><td class="text-end mono-code">₹8,500</td></tr><tr><td>Unloading</td><td class="text-end mono-code">₹2,000</td></tr><tr><td>Furniture handling</td><td class="text-end mono-code">₹1,000</td></tr><tr><td>Protection</td><td class="text-end mono-code">₹1,000</td></tr>
+          </tbody>
+        </table>
+
+        <div class="d-flex justify-content-end">
+          <div class="min-w-260">
+            <ul class="price-breakdown">
+              <li><span>Subtotal</span><span class="mono-code">₹19,000</span></li>
+              <li><span>Tax (18%)</span><span class="mono-code">₹3,420</span></li>
+              <li class="total"><span>Total</span><span class="mono-code">₹22,420</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="mt-5 pt-4 border-top border-soft small text-muted-2">
+          <p class="mb-1">Payment status: <strong class="u-text-green">Paid on delivery</strong></p>
+          <p class="mb-0">Questions about this invoice? Contact your move coordinator or write to billing@movenest.example.</p>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
