@@ -350,6 +350,25 @@ a { text-decoration: none; color: inherit; }
 .progress-route .p-cap { font-size: .74rem; margin-top: .5rem; color: var(--text-faint); display: block; }
 .progress-route .p-step.done .p-cap, .progress-route .p-step.current .p-cap { color: var(--text); font-weight: 700; }
 
+/* On narrow screens six equal-width steps force captions like "Crew Assigned" and
+   "In Transit" to wrap onto a second line, which then overlaps the caption of the
+   next step. Switch to a vertical timeline instead of a horizontal one so every
+   caption gets the full row width and can wrap safely. */
+@media (max-width: 575.98px) {
+  .progress-route { flex-direction: column; align-items: flex-start; margin-block: 1.1rem; }
+  .progress-route .p-step {
+    flex: none;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    padding-block: .5rem;
+  }
+  .progress-route .p-dot { margin-inline: 0; flex: none; margin-top: 2px; }
+  .progress-route .p-line { top: -50%; left: 7px; width: 2px; height: 100%; }
+  .progress-route .p-cap { margin-top: 0; margin-left: .85rem; }
+}
+
 /* ---- testimonials ---------------------------------------------------------------- */
 .review-card { background: var(--bg-raised); border: 1px solid var(--border-soft); border-radius: var(--radius-md); padding: 1.6rem; height: 100%; box-shadow: var(--shadow-card); }
 .review-card .stars { color: var(--amber); font-size: .85rem; margin-bottom: .6rem; }
