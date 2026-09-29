@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | MoveNest</title>
+  <meta name="description" content="Explore MoveNest's household relocation services: local shifting, intercity moves, packing, office relocation, furniture handling, and vehicle transport.">
+  <link rel="canonical" href="https://www.movenest.example/pages/services.html">
+    <link rel="shortcut icon" href="../assets/images/icon.png" type="image/x-icon">
+
+  <meta property="og:title" content="Services | MoveNest">
+  <meta property="og:description" content="Explore MoveNest's household relocation services: local shifting, intercity moves, packing, office relocation, furniture handling, and vehicle transport.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.movenest.example/pages/services.html">
+  <meta name="theme-color" content="#142238">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=DM+Mono:wght@500&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/dark-mode.css">
+  <link rel="stylesheet" href="../assets/css/rtl.css">
+
+  <script>
+    (function() {
+      try {
+        var t = localStorage.getItem('movenest-theme') ||
+          (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', t);
+      } catch (e) {}
+    })();
+  </script>
+</head>
+<body>
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader-mark">
+      <div class="preloader-route"><span class="preloader-pin"></span></div>
+      <span class="preloader-word">MoveNest</span>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container-wide d-flex align-items-center justify-content-between header-row">
+      <a href="index.html" class="brand-mark"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+
+      <nav class="main-nav d-none d-lg-flex" aria-label="Primary">
+        <div class="dropdown">
+          <a href="index.html" class="dropdown-toggle " data-bs-toggle="dropdown" aria-expanded="false" role="button">Home</a>
+          <ul class="dropdown-menu border-0 shadow-card rounded-md p-2 dropdown-surface">
+            <li><a class="dropdown-item rounded-sm py-2" href="index.html">Home 1</a></li>
+            <li><a class="dropdown-item rounded-sm py-2" href="home-2.html">Home 2</a></li>
+          </ul>
+        </div>
+        <a href="services.html" class="active" aria-current="page">Services</a>
+        <a href="pricing.html" class="">Pricing</a>
+        <a href="how-it-works.html" class="">How It Works</a>
+        <a href="about.html" class="">About</a>
+        <a href="blog.html" class="">Blog</a>
+        <a href="contact.html" class="">Contact</a>
+      </nav>
+
+      <div class="d-flex align-items-center gap-2">
+        <button type="button" class="icon-btn d-none d-md-inline-flex" data-theme-toggle aria-pressed="false" aria-label="Toggle dark mode">
+          <i class="bi bi-moon-stars"></i>
+        </button>
+        <button type="button" class="dir-btn d-none d-md-inline-flex" data-rtl-toggle aria-pressed="false" aria-label="Switch to right-to-left layout" title="Switch to right-to-left layout"><span data-dir-label>RTL</span></button>
+        <a href="login.html" class="btn btn-outline btn-sm d-none d-md-inline-flex">Login</a>
+        <a href="pricing.html" class="btn btn-primary btn-sm header-cta"><span><span class="cta-long">Get a </span>Free Quote</span></a>
+        <button type="button" class="icon-btn d-lg-none" data-bs-toggle="offcanvas" data-bs-target="#mobileNav" aria-label="Open menu">
+          <i class="bi bi-list icon-btn-lg"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="offcanvas offcanvas-end mobile-nav" tabindex="-1" id="mobileNav" aria-labelledby="mobileNavLabel">
+    <div class="offcanvas-header">
+      <span class="brand-mark" id="mobileNavLabel"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></span>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <a href="index.html" class="nav-link-lg">Home 1</a>
+      <a href="home-2.html" class="nav-link-lg">Home 2</a>
+      <a href="services.html" class="nav-link-lg">Services</a>
+      <a href="pricing.html" class="nav-link-lg">Pricing</a>
+      <a href="how-it-works.html" class="nav-link-lg">How It Works</a>
+      <a href="about.html" class="nav-link-lg">About</a>
+      <a href="blog.html" class="nav-link-lg">Blog</a>
+      <a href="contact.html" class="nav-link-lg">Contact</a>
+      <div class="d-flex gap-2 mt-4">
+        <a href="login.html" class="btn btn-outline btn-block flex-fill">Login</a>
+        <a href="pricing.html" class="btn btn-primary btn-block flex-fill">Get a Free Quote</a>
+      </div>
+      <button type="button" class="btn btn-outline btn-sm mt-3" data-theme-toggle aria-pressed="false">
+        <i class="bi bi-moon-stars"></i> Toggle dark mode
+      </button>
+      <button type="button" class="btn btn-outline btn-sm mt-2" data-rtl-toggle aria-pressed="false">
+        <span data-dir-label-long>Switch to RTL layout</span>
+      </button>
+    </div>
+  </div>
+
+  <section class="svc-intro">
+    <div class="container-wide">
+      <nav class="svc-crumb" aria-label="Breadcrumb"><a href="index.html">Home</a><span>/</span><span aria-current="page">Services</span></nav>
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7">
+          <h1 class="svc-intro-title">Our services</h1>
+          <p class="svc-intro-lead">Home shifting, packing, office moves, furniture handling and storage — every service with its inclusions, crew and starting price listed below.</p>
+          <ul class="svc-intro-stats">
+            <li><strong>6</strong><span>services</span></li>
+            <li><strong>120+</strong><span>cities covered</span></li>
+            <li><strong>4.9/5</strong><span>average rating</span></li>
+            <li><strong>₹0</strong><span>hidden charges</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-5">
+          <form class="svc-quick" action="pricing.html" method="get">
+            <h2>Quick quote</h2>
+            <p class="small text-muted-2 mb-3">Pick a service and your cities — we’ll open the calculator with your details.</p>
+            <label for="qqService" class="form-label">Service</label>
+            <select id="qqService" name="service" class="form-select mb-3"><option value="local">Local home shifting</option><option value="intercity">Intercity relocation</option><option value="packing">Packing & unpacking</option><option value="office">Office relocation</option><option value="furniture">Furniture wrapping & moving</option><option value="storage">Storage & warehousing</option></select>
+            <div class="row g-2 mb-3">
+              <div class="col-6"><label for="qqFrom" class="form-label">From</label><input id="qqFrom" name="from" class="form-control" placeholder="City"></div>
+              <div class="col-6"><label for="qqTo" class="form-label">To</label><input id="qqTo" name="to" class="form-control" placeholder="City"></div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Check Price</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="svc-catalogue">
+    <div class="container-wide">
+      <div class="row g-4 g-xl-5">
+        <aside class="col-lg-3">
+          <div class="cat-side">
+            <nav class="cat-nav" aria-label="Services"><p class="cat-group">For homes</p><a href="#local" class="cat-link"><i class="bi bi-house-door"></i><span>Local home shifting</span><em class="cat-dot is-bestseller" title="Bestseller"></em></a><a href="#intercity" class="cat-link"><i class="bi bi-signpost-2"></i><span>Intercity relocation</span><em class="cat-dot is-most-booked" title="Most booked"></em></a><a href="#packing" class="cat-link"><i class="bi bi-box-seam"></i><span>Packing &amp; unpacking</span><em class="cat-dot is-top-rated" title="Top rated"></em></a><p class="cat-group">For business</p><a href="#office" class="cat-link"><i class="bi bi-briefcase"></i><span>Office relocation</span><em class="cat-dot is-business" title="For business"></em></a><p class="cat-group">Add-on services</p><a href="#furniture" class="cat-link"><i class="bi bi-lamp"></i><span>Furniture wrapping &amp; moving</span><em class="cat-dot is-addon" title="Popular add-on"></em></a><a href="#storage" class="cat-link"><i class="bi bi-archive"></i><span>Storage &amp; warehousing</span><em class="cat-dot is-new" title="New"></em></a></nav>
+            <div class="cat-help">
+              <p class="fw-semibold mb-1">Need help choosing?</p>
+              <p class="small mb-2">Talk to a move expert — free, 5 minutes.</p>
+              <a href="tel:+914467890123" class="fw-semibold"><i class="bi bi-telephone"></i> +91 44 6789 0123</a>
+            </div>
+          </div>
+        </aside>
+        <div class="col-lg-9">
+          <div class="cat-panels">
+          <article class="cat-panel" id="local">
+            <header class="cat-panel-head">
+              <span class="cat-panel-icon"><i class="bi bi-house-door"></i></span>
+              <div class="cat-panel-title">
+                <h2>Local home shifting</h2>
+                <div class="cat-panel-meta"><span class="svc-row-tag is-bestseller">Bestseller</span><span><i class="bi bi-star-fill"></i> 4.9</span><span>6,200+ moves</span></div>
+              </div>
+              <div class="cat-panel-price"><small>From</small><strong>₹6,500<span></span></strong></div>
+            </header>
+            <div class="cat-panel-body">
+              <figure class="cat-panel-media"><img src="../assets/images/step-loading.jpg" alt="A MoveNest mover carrying a carton from the house to the van parked outside on moving day" loading="lazy"></figure>
+              <div class="cat-panel-copy">
+                <p>Same-city relocation for apartments, independent houses and studios. One crew packs, loads, drives and places everything in your new home the same day.</p>
+                <p class="cat-ideal"><strong>Ideal for:</strong> Studio to 4 BHK moves within one city</p>
+                <ul class="cat-incl"><li><i class="bi bi-check2"></i>Packing &amp; labelling</li><li><i class="bi bi-check2"></i>Loading &amp; unloading</li><li><i class="bi bi-check2"></i>Furniture reassembly</li><li><i class="bi bi-check2"></i>Same-day delivery</li></ul>
+                <dl class="cat-facts">
+                  <div><dt>Duration</dt><dd>Same day</dd></div>
+                  <div><dt>Crew</dt><dd>2–6 movers</dd></div>
+                  <div><dt>Includes</dt><dd>Mini to 17 ft truck</dd></div>
+                </dl>
+              </div>
+            </div>
+            <footer class="cat-panel-foot">
+              <span class="small text-muted-2"><i class="bi bi-shield-check"></i> Insured · GST included · No hidden charges</span>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="pricing.html#calculator" class="btn btn-outline btn-sm">Get a quote</a>
+                <a href="booking.html?service=local" class="btn btn-primary btn-sm">Book this service</a>
+              </div>
+            </footer>
+          </article>
+          <article class="cat-panel" id="intercity">
+            <header class="cat-panel-head">
+              <span class="cat-panel-icon"><i class="bi bi-signpost-2"></i></span>
+              <div class="cat-panel-title">
+                <h2>Intercity relocation</h2>
+                <div class="cat-panel-meta"><span class="svc-row-tag is-most-booked">Most booked</span><span><i class="bi bi-star-fill"></i> 4.8</span><span>3,900+ moves</span></div>
+              </div>
+              <div class="cat-panel-price"><small>From</small><strong>₹21,000<span></span></strong></div>
+            </header>
+            <div class="cat-panel-body">
+              <figure class="cat-panel-media"><img src="../assets/images/svc-intercity.jpg" alt="A closed MoveNest truck driving through the city on an intercity relocation" loading="lazy"></figure>
+              <div class="cat-panel-copy">
+                <p>Long-distance household moves on a dedicated truck, with a delivery window agreed before pickup and live tracking all the way to your new city.</p>
+                <p class="cat-ideal"><strong>Ideal for:</strong> Moves between cities and states</p>
+                <ul class="cat-incl"><li><i class="bi bi-check2"></i>Dedicated truck</li><li><i class="bi bi-check2"></i>Transit insurance</li><li><i class="bi bi-check2"></i>Live GPS tracking</li><li><i class="bi bi-check2"></i>Fixed delivery window</li></ul>
+                <dl class="cat-facts">
+                  <div><dt>Duration</dt><dd>2–6 days</dd></div>
+                  <div><dt>Crew</dt><dd>Dedicated truck</dd></div>
+                  <div><dt>Includes</dt><dd>Door-to-door</dd></div>
+                </dl>
+              </div>
+            </div>
+            <footer class="cat-panel-foot">
+              <span class="small text-muted-2"><i class="bi bi-shield-check"></i> Insured · GST included · No hidden charges</span>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="pricing.html#calculator" class="btn btn-outline btn-sm">Get a quote</a>
+                <a href="booking.html?service=intercity" class="btn btn-primary btn-sm">Book this service</a>
+              </div>
+            </footer>
+          </article>
+          <article class="cat-panel" id="packing">
+            <header class="cat-panel-head">
+              <span class="cat-panel-icon"><i class="bi bi-box-seam"></i></span>
+              <div class="cat-panel-title">
+                <h2>Packing &amp; unpacking</h2>
+                <div class="cat-panel-meta"><span class="svc-row-tag is-top-rated">Top rated</span><span><i class="bi bi-star-fill"></i> 4.9</span><span>5,100+ jobs</span></div>
+              </div>
+              <div class="cat-panel-price"><small>From</small><strong>₹3,500<span></span></strong></div>
+            </header>
+            <div class="cat-panel-body">
+              <figure class="cat-panel-media"><img src="../assets/images/packiing.jpg" alt="A packer sealing and labelling moving cartons in a living room" loading="lazy"></figure>
+              <div class="cat-panel-copy">
+                <p>Professional packing with bubble wrap, foam and double-wall cartons — from kitchenware to TVs — and unpacking at your new address if you want it.</p>
+                <p class="cat-ideal"><strong>Ideal for:</strong> Anyone who wants the packing handled end to end</p>
+                <ul class="cat-incl"><li><i class="bi bi-check2"></i>Fragile-item wrapping</li><li><i class="bi bi-check2"></i>Labelled cartons</li><li><i class="bi bi-check2"></i>Unpacking on request</li><li><i class="bi bi-check2"></i>Material pickup after</li></ul>
+                <dl class="cat-facts">
+                  <div><dt>Duration</dt><dd>4–8 hours</dd></div>
+                  <div><dt>Crew</dt><dd>Trained packers</dd></div>
+                  <div><dt>Includes</dt><dd>All materials</dd></div>
+                </dl>
+              </div>
+            </div>
+            <footer class="cat-panel-foot">
+              <span class="small text-muted-2"><i class="bi bi-shield-check"></i> Insured · GST included · No hidden charges</span>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="pricing.html#calculator" class="btn btn-outline btn-sm">Get a quote</a>
+                <a href="booking.html?service=packing" class="btn btn-primary btn-sm">Book this service</a>
+              </div>
+            </footer>
+          </article>
+          <article class="cat-panel" id="office">
+            <header class="cat-panel-head">
+              <span class="cat-panel-icon"><i class="bi bi-briefcase"></i></span>
+              <div class="cat-panel-title">
+                <h2>Office relocation</h2>
+                <div class="cat-panel-meta"><span class="svc-row-tag is-business">For business</span><span><i class="bi bi-star-fill"></i> 4.8</span><span>420+ offices</span></div>
+              </div>
+              <div class="cat-panel-price"><small>From</small><strong>₹25,000<span></span></strong></div>
+            </header>
+            <div class="cat-panel-body">
+              <figure class="cat-panel-media"><img src="../assets/images/off relocation.jpg" alt="A MoveNest crew member carrying a packed office carton past workstations" loading="lazy"></figure>
+              <div class="cat-panel-copy">
+                <p>Desk-to-desk commercial moves planned around business hours, with IT equipment handling and a floor plan for every workstation.</p>
+                <p class="cat-ideal"><strong>Ideal for:</strong> Small to mid-size offices and studios</p>
+                <ul class="cat-incl"><li><i class="bi bi-check2"></i>IT &amp; server handling</li><li><i class="bi bi-check2"></i>Weekend scheduling</li><li><i class="bi bi-check2"></i>Desk labelling plan</li><li><i class="bi bi-check2"></i>Next-day setup</li></ul>
+                <dl class="cat-facts">
+                  <div><dt>Duration</dt><dd>Weekend slots</dd></div>
+                  <div><dt>Crew</dt><dd>Up to 60 desks</dd></div>
+                  <div><dt>Includes</dt><dd>IT-safe crates</dd></div>
+                </dl>
+              </div>
+            </div>
+            <footer class="cat-panel-foot">
+              <span class="small text-muted-2"><i class="bi bi-shield-check"></i> Insured · GST included · No hidden charges</span>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="pricing.html#calculator" class="btn btn-outline btn-sm">Get a quote</a>
+                <a href="booking.html?service=office" class="btn btn-primary btn-sm">Book this service</a>
+              </div>
+            </footer>
+          </article>
+          <article class="cat-panel" id="furniture">
+            <header class="cat-panel-head">
+              <span class="cat-panel-icon"><i class="bi bi-lamp"></i></span>
+              <div class="cat-panel-title">
+                <h2>Furniture wrapping &amp; moving</h2>
+                <div class="cat-panel-meta"><span class="svc-row-tag is-addon">Popular add-on</span><span><i class="bi bi-star-fill"></i> 4.9</span><span>2,700+ jobs</span></div>
+              </div>
+              <div class="cat-panel-price"><small>From</small><strong>₹1,500<span> /item</span></strong></div>
+            </header>
+            <div class="cat-panel-body">
+              <figure class="cat-panel-media"><img src="../assets/images/svc-furniture.jpg" alt="Sofas and furniture wrapped in protective sheets beside packed cartons" loading="lazy"></figure>
+              <div class="cat-panel-copy">
+                <p>Large and delicate furniture handled with dollies, blankets and stretch wrap — sofas, wardrobes, beds, pianos — dismantled and rebuilt on site.</p>
+                <p class="cat-ideal"><strong>Ideal for:</strong> Single large items or a full home of furniture</p>
+                <ul class="cat-incl"><li><i class="bi bi-check2"></i>Dismantle &amp; reassemble</li><li><i class="bi bi-check2"></i>Blanket &amp; stretch wrap</li><li><i class="bi bi-check2"></i>Doorway protection</li><li><i class="bi bi-check2"></i>Placement of your choice</li></ul>
+                <dl class="cat-facts">
+                  <div><dt>Duration</dt><dd>1–3 hours</dd></div>
+                  <div><dt>Crew</dt><dd>Tools on board</dd></div>
+                  <div><dt>Includes</dt><dd>Any size item</dd></div>
+                </dl>
+              </div>
+            </div>
+            <footer class="cat-panel-foot">
+              <span class="small text-muted-2"><i class="bi bi-shield-check"></i> Insured · GST included · No hidden charges</span>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="pricing.html#calculator" class="btn btn-outline btn-sm">Get a quote</a>
+                <a href="booking.html?service=furniture" class="btn btn-primary btn-sm">Book this service</a>
+              </div>
+            </footer>
+          </article>
+          <article class="cat-panel" id="storage">
+            <header class="cat-panel-head">
+              <span class="cat-panel-icon"><i class="bi bi-archive"></i></span>
+              <div class="cat-panel-title">
+                <h2>Storage &amp; warehousing</h2>
+                <div class="cat-panel-meta"><span class="svc-row-tag is-new">New</span><span><i class="bi bi-star-fill"></i> 4.7</span><span>900+ customers</span></div>
+              </div>
+              <div class="cat-panel-price"><small>From</small><strong>₹2,000<span> /month</span></strong></div>
+            </header>
+            <div class="cat-panel-body">
+              <figure class="cat-panel-media"><img src="../assets/images/Storage & warehousing.jpg" alt="Packed cartons stacked on racks inside a clean MoveNest storage facility" loading="lazy"></figure>
+              <div class="cat-panel-copy">
+                <p>Short- and long-term storage in CCTV-monitored, pest-controlled warehouses, with an inventory of every carton and doorstep redelivery.</p>
+                <p class="cat-ideal"><strong>Ideal for:</strong> Gaps between move-out and move-in, renovations</p>
+                <ul class="cat-incl"><li><i class="bi bi-check2"></i>CCTV-monitored</li><li><i class="bi bi-check2"></i>Itemised inventory</li><li><i class="bi bi-check2"></i>Pest-controlled units</li><li><i class="bi bi-check2"></i>Doorstep redelivery</li></ul>
+                <dl class="cat-facts">
+                  <div><dt>Duration</dt><dd>Weekly / monthly</dd></div>
+                  <div><dt>Crew</dt><dd>CCTV 24×7</dd></div>
+                  <div><dt>Includes</dt><dd>Doorstep delivery</dd></div>
+                </dl>
+              </div>
+            </div>
+            <footer class="cat-panel-foot">
+              <span class="small text-muted-2"><i class="bi bi-shield-check"></i> Insured · GST included · No hidden charges</span>
+              <div class="d-flex flex-wrap gap-2">
+                <a href="pricing.html#calculator" class="btn btn-outline btn-sm">Get a quote</a>
+                <a href="booking.html?service=storage" class="btn btn-primary btn-sm">Book this service</a>
+              </div>
+            </footer>
+          </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGE MATRIX -->
+  <section class="section bg-sunken" id="packages">
+    <div class="container-wide">
+      <div class="section-head reveal">
+        <div class="section-head-copy">
+          <span class="h-eyebrow">Compare packages</span>
+          <h2 class="mt-3 mb-0">What each home-size package includes</h2>
+          <p>Starting prices for same-city moves, GST included.</p>
+        </div>
+        <a href="pricing.html#calculator" class="btn btn-outline">Calculate an exact price</a>
+      </div>
+      <div class="matrix-wrap reveal">
+        <table class="matrix-table">
+          <thead>
+            <tr>
+              <th scope="col"><span class="visually-hidden">Feature</span></th>
+              <th scope="col"><span class="matrix-flag is-quiet">Budget pick</span><strong>Studio &amp; 1 BHK</strong><span class="matrix-price">₹9,500</span></th>
+              <th scope="col" class="is-hl"><span class="matrix-flag">Most purchased</span><strong>2 BHK Complete</strong><span class="matrix-price">₹14,000</span></th>
+              <th scope="col"><span class="matrix-flag is-quiet">Premium</span><strong>3 BHK &amp; villas</strong><span class="matrix-price">₹19,500</span></th>
+            </tr>
+          </thead>
+          <tbody><tr><th scope="row">Movers</th><td>2</td><td class="is-hl">4</td><td>6</td></tr><tr><th scope="row">Truck</th><td>Mini truck</td><td class="is-hl">Closed 14 ft</td><td>Closed 17 ft</td></tr><tr><th scope="row">Packing materials</th><td>Standard</td><td class="is-hl">Premium</td><td>Premium + crating</td></tr><tr><th scope="row">Furniture dismantle &amp; reassembly</th><td><span class="text-muted-2" aria-label="Not included">—</span></td><td class="is-hl"><i class="bi bi-check-circle-fill text-success-soft" aria-label="Included"></i></td><td><i class="bi bi-check-circle-fill text-success-soft" aria-label="Included"></i></td></tr><tr><th scope="row">Unpacking</th><td><span class="text-muted-2" aria-label="Not included">—</span></td><td class="is-hl">Kitchen &amp; wardrobes</td><td>Whole home</td></tr><tr><th scope="row">Transit insurance</th><td>Basic</td><td class="is-hl">Full</td><td>Full</td></tr><tr><th scope="row">Dedicated coordinator</th><td><span class="text-muted-2" aria-label="Not included">—</span></td><td class="is-hl"><span class="text-muted-2" aria-label="Not included">—</span></td><td><i class="bi bi-check-circle-fill text-success-soft" aria-label="Included"></i></td></tr><tr><th scope="row">Debris removal</th><td><span class="text-muted-2" aria-label="Not included">—</span></td><td class="is-hl"><span class="text-muted-2" aria-label="Not included">—</span></td><td><i class="bi bi-check-circle-fill text-success-soft" aria-label="Included"></i></td></tr></tbody>
+          <tfoot>
+            <tr><td></td>
+              <td><a href="booking.html?package=1bhk" class="btn btn-outline btn-sm btn-block">Book 1 BHK</a></td>
+              <td class="is-hl"><a href="booking.html?package=2bhk" class="btn btn-primary btn-sm btn-block">Book 2 BHK</a></td>
+              <td><a href="booking.html?package=3bhk" class="btn btn-outline btn-sm btn-block">Book 3 BHK</a></td>
+            </tr>
+          </tfoot>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ADD-ONS -->
+  <section class="section">
+    <div class="container-wide">
+      <div class="section-head reveal">
+        <div class="section-head-copy">
+          <span class="h-eyebrow">Add-ons</span>
+          <h2 class="mt-3 mb-0">Extras you can add to any move</h2>
+          <p>Ask your coordinator to include these in the same booking.</p>
+        </div>
+      </div>
+      <div class="addon-grid"><div class="addon-tile reveal"><i class="bi bi-car-front"></i><div><h3>Car &amp; bike transport</h3><span>From ₹4,500</span></div></div><div class="addon-tile reveal"><i class="bi bi-tv"></i><div><h3>TV wall mounting</h3><span>₹799 per TV</span></div></div><div class="addon-tile reveal"><i class="bi bi-snow"></i><div><h3>AC uninstall &amp; reinstall</h3><span>₹1,499 per unit</span></div></div><div class="addon-tile reveal"><i class="bi bi-stars"></i><div><h3>Move-out deep cleaning</h3><span>From ₹2,999</span></div></div><div class="addon-tile reveal"><i class="bi bi-bug"></i><div><h3>Pest control before move-in</h3><span>From ₹1,299</span></div></div><div class="addon-tile reveal"><i class="bi bi-tools"></i><div><h3>Handyman for 2 hours</h3><span>₹999</span></div></div></div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container-wide section-tight">
+      <div class="row g-4 mb-5">
+        <div class="col-6 col-lg-3 footer-col">
+          <a href="index.html" class="brand-mark mb-3 d-inline-flex"><img src="../assets/images/logo.png" alt="MoveNest logo" class="brand-logo-img"></a>
+          <p class="small mt-2">Household relocation, packed and delivered with care — across the street or across the country.</p>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Company</h6>
+          <a href="about.html">About us</a>
+          <a href="services.html">Services</a>
+          <a href="pricing.html">Pricing &amp; packages</a>
+          <a href="how-it-works.html">How it works</a>
+          <a href="blog.html">Blog</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Services</h6>
+          <a href="services.html#local">Local shifting</a>
+          <a href="services.html#intercity">Intercity relocation</a>
+          <a href="services.html#packing">Packing &amp; unpacking</a>
+          <a href="services.html#office">Office relocation</a>
+        </div>
+        <div class="col-6 col-lg-3 footer-col">
+          <h6>Support</h6>
+          <a href="login.html">Login</a>
+          <a href="register.html">Create account</a>
+          <a href="track-move.html">Track a move</a>
+          <a href="booking.html">Book a move</a>
+          <a href="contact.html">Help centre</a>
+        </div>
+      </div>
+      <div class="row g-4 align-items-center pt-4 border-top border-soft">
+        <div class="col-lg-6">
+          <form class="d-flex footer-newsletter" data-validate onsubmit="event.preventDefault(); this.reset(); this.querySelector('button').innerHTML='Subscribed';">
+            <label for="footerEmail" class="visually-hidden">Email address</label>
+            <input type="email" id="footerEmail" name="email" class="form-control" placeholder="Get moving tips by email" required data-validate="email" data-label="email address">
+            <button type="submit" class="btn btn-primary">Subscribe</button>
+          </form>
+        </div>
+        <div class="col-lg-6 d-flex justify-content-lg-end gap-2 mt-3 mt-lg-0">
+          <a href="#" class="icon-btn" aria-label="MoveNest on Instagram"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on LinkedIn"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on X"><i class="bi bi-twitter-x"></i></a>
+          <a href="#" class="icon-btn" aria-label="MoveNest on YouTube"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+      <div class="d-flex flex-wrap justify-content-between gap-2 pt-4 mt-4 border-top border-soft small text-muted-2">
+        <span>&copy; 2026 MoveNest Relocation Pvt. Ltd. All rights reserved.</span>
+        <div class="d-flex gap-3">
+          <a href="404.html">Privacy Policy</a>
+          <a href="404.html">Terms of Service</a>
+          <a href="../sitemap.xml">Sitemap</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../assets/js/main.js"></script>
+  <script>
+    // Highlight the service in the jump bar that is currently on screen
+    (function () {
+      var links = document.querySelectorAll('.cat-link');
+      if (!('IntersectionObserver' in window) || !links.length) return;
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (!en.isIntersecting) return;
+          links.forEach(function (l) {
+            var on = l.getAttribute('href') === '#' + en.target.id;
+            l.classList.toggle('is-current', on);
+            if (on && window.innerWidth < 992) l.parentElement.scrollTo({ left: l.offsetLeft - 16, behavior: 'smooth' });
+          });
+        });
+      }, { rootMargin: '-45% 0px -50% 0px' });
+      document.querySelectorAll('.cat-panel').forEach(function (el) { io.observe(el); });
+    })();
+  </script>
+</body>
+</html>
